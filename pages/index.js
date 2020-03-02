@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
 const Home = () => (
   <div className="container">
@@ -6,76 +6,59 @@ const Home = () => (
       <title>Create Next App</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-
     <main>
-      <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
+      <header className="showcase">
+        <div className="container">
+          <nav>
+            <h1 className="logo">My Website</h1>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
 
-      <p className="description">
-        Get started by editing <code>pages/index.js</code>
-      </p>
+          <div className="showcase-content">
+            <div>
+              <h1>Make Your Marketing Real</h1>
+              <p className="my-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                eaque quis et rerum maxime provident cumque blanditiis ratione
+                eos, saepe deleniti aspernatur! Ratione iste unde saepe fugit
+                laboriosam rem animi.
+              </p>
+              <a href="#" className="btn-primary">
+                Learn More
+              </a>
+              <a href="#" className="btn-secondary">
+                Sign Up
+              </a>
+            </div>
+            <img
+              src="https://themesbrand.com/zooki/layouts/images/home-2-img.png"
+              alt="home-2 form zooki"
+            />
+          </div>
+        </div>
+      </header>
 
-      <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-
+      <footer>
         <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
+          href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
+          Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
         </a>
-
-        <a
-          href="https://zeit.co/new?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className="card"
-        >
-          <h3>Deploy &rarr;</h3>
-          <p>
-            Instantly deploy your Next.js site to a public URL with ZEIT Now.
-          </p>
-        </a>
-      </div>
+      </footer>
     </main>
-
-    <footer>
-      <a
-        href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
-      </a>
-    </footer>
-
     <style jsx>{`
-      .container {
-        min-height: 100vh;
-        padding: 0 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      main {
-        padding: 5rem 0;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
       footer {
         width: 100%;
         height: 100px;
@@ -95,11 +78,6 @@ const Home = () => (
         align-items: center;
       }
 
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
       .title a {
         color: #0070f3;
         text-decoration: none;
@@ -111,75 +89,190 @@ const Home = () => (
         text-decoration: underline;
       }
 
-      .title {
-        margin: 0;
-        line-height: 1.15;
-        font-size: 4rem;
+      .m-1 {
+        margin: 1rem;
       }
 
-      .title,
-      .description {
-        text-align: center;
+      .my-1 {
+        margin: 1rem 0;
       }
 
-      .description {
-        line-height: 1.5;
-        font-size: 1.5rem;
+      .p-1 {
+        padding: 1rem;
       }
 
-      code {
-        background: #fafafa;
-        border-radius: 5px;
-        padding: 0.75rem;
-        font-size: 1.1rem;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+      .py-1 {
+        padding: 1rem 0;
       }
 
-      .grid {
+      .m-2 {
+        margin: 2rem;
+      }
+
+      .my-2 {
+        margin: 2rem 0;
+      }
+
+      .p-2 {
+        padding: 2rem;
+      }
+
+      .py-2 {
+        padding: 2rem 0;
+      }
+
+      .m-3 {
+        margin: 3rem;
+      }
+
+      .my-3 {
+        margin: 3rem 0;
+      }
+
+      .p-3 {
+        padding: 3rem;
+      }
+
+      .py-3 {
+        padding: 3rem 0;
+      }
+
+      .m-4 {
+        margin: 4rem;
+      }
+
+      .my-4 {
+        margin: 4rem 0;
+      }
+
+      .p-4 {
+        padding: 4rem;
+      }
+
+      .py-4 {
+        padding: 4rem 0;
+      }
+
+      .m-5 {
+        margin: 5rem;
+      }
+
+      .my-5 {
+        margin: 5rem 0;
+      }
+
+      .p-5 {
+        padding: 5rem;
+      }
+
+      .py-5 {
+        padding: 5rem 0;
+      }
+
+      .m-6 {
+        margin: 6rem;
+      }
+
+      .my-6 {
+        margin: 6rem 0;
+      }
+
+      .p-6 {
+        padding: 6rem;
+      }
+
+      .py-6 {
+        padding: 6rem 0;
+      }
+
+      .btn-secondary,
+      .btn-primary {
+        display: inline-block;
+        border-radius: 4px;
+        padding: 8px 20px;
+        margin: 3px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+      }
+      .btn-secondary:hover,
+      .btn-primary:hover {
+        transform: scale(0.98);
+        -webkit-transform: scale(0.98);
+        -moz-transform: scale(0.98);
+        -ms-transform: scale(0.98);
+        -o-transform: scale(0.98);
+      }
+
+      .btn-primary {
+        background-color: white;
+        color: #333333;
+      }
+
+      .btn-secondary {
+        background-color: #ad62aa;
+        color: #333333;
+      }
+
+      .showcase {
+        background-color: #e4cbd3;
+        color: #333333;
+        height: 600px;
+      }
+      .showcase nav {
         display: flex;
         align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        max-width: 800px;
-        margin-top: 3rem;
+        justify-content: space-between;
       }
-
-      .card {
-        margin: 1rem;
-        flex-basis: 45%;
-        padding: 1.5rem;
-        text-align: left;
-        color: inherit;
+      .showcase ul {
+        display: flex;
+        list-style-type: none;
+      }
+      .showcase li {
+        padding: 1rem;
+      }
+      .showcase a {
         text-decoration: none;
-        border: 1px solid #eaeaea;
-        border-radius: 10px;
-        transition: color 0.15s ease, border-color 0.15s ease;
+        cursor: pointer;
+      }
+      .showcase a:hover {
+        color: black;
+      }
+      .showcase-content {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        margin-top: 2rem;
+      }
+      .showcase-content img {
+        width: 50%;
+      }
+      .showcase-content h1 {
+        font-size: 3.125rem;
+        line-height: 1.2;
       }
 
-      .card:hover,
-      .card:focus,
-      .card:active {
-        color: #0070f3;
-        border-color: #0070f3;
+      .container {
+        max-width: 1100px;
+        padding: 0 30px;
+        margin: 0 auto;
+        overflow: auto;
       }
 
-      .card h3 {
-        margin: 0 0 1rem 0;
-        font-size: 1.5rem;
+      img {
+        width: 100%;
       }
 
-      .card p {
-        margin: 0;
-        font-size: 1.25rem;
-        line-height: 1.5;
-      }
-
-      @media (max-width: 600px) {
-        .grid {
-          width: 100%;
-          flex-direction: column;
+      @media (max-width: 700px) {
+        .showcase {
+          height: 500px;
+        }
+        .showcase-content {
+          text-align: center;
+        }
+        .showcase-content img {
+          display: none;
         }
       }
     `}</style>
@@ -198,6 +291,6 @@ const Home = () => (
       }
     `}</style>
   </div>
-)
+);
 
-export default Home
+export default Home;
