@@ -3,7 +3,7 @@ import Head from 'next/head';
 const Home = () => (
   <div className="container">
     <Head>
-      <title>Create Next App</title>
+      <title>Simple statics site</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <main>
@@ -36,7 +36,7 @@ const Home = () => (
               <a href="#" className="btn-primary">
                 Learn More
               </a>
-              <a href="#" className="btn-secondary">
+              <a href="./nodejs" className="btn-secondary">
                 Sign Up
               </a>
             </div>
