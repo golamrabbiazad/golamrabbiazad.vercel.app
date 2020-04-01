@@ -9,9 +9,9 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "9.2.2",
-    "now": "^17.0.4",
-    "react": "16.13.0",
-    "react-dom": "16.13.0"
+    "next": "9.3.3",
+    "now": "^17.1.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
   }
 }
