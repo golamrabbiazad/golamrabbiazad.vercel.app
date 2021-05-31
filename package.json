@@ -1,17 +1,20 @@
 {
-  "name": "nextjs-demo_app",
+  "name": "work-around",
   "version": "0.1.0",
   "private": true,
-  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "next": "^9.5.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "vercel": "^20.1.0"
+    "next": "10.2.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-hook-form": "^7.7.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.8",
+    "typescript": "^4.3.2"
   }
 }
