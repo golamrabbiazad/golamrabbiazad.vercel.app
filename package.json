@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "name": "golamrabbiazad.pages.dev",
+  "version": "1.0.0",
+  "description": "Official portfolio site of Golamrabbi Azad.",
+  "repository": "https://github.com/golamrabbiazad/golamrabbiazad.pages.dev",
+  "author": "golamrabbiazad",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "lint": "next lint",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1",
+    "next": "^12.0.3",
+    "next-themes": "^0.0.15",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^12.0.4",
+    "@tailwindcss/typography": "^0.4.1",
+    "@types/node": "^16.11.7",
+    "@types/react": "^17.0.35",
+    "@types/react-dom": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "<8.0.0",
+    "eslint-config-next": "^12.0.4",
+    "eslint-plugin-react": "^7.27.0",
+    "postcss": "^8.3.11",
+    "prettier": "^2.4.1",
+    "tailwindcss": "^2.2.19",
+    "typescript": "^4.4.4"
+  }
+}

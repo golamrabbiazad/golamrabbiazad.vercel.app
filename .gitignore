@@ -12,12 +12,19 @@
 /.next/
 /out/
 
+# site xml
+public/sitemap.xml
+public/feed.xml
+
 # production
 /build
 
 # misc
 .DS_Store
 *.pem
+
+# logs
+*.log
 
 # debug
 npm-debug.log*
