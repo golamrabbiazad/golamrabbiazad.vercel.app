@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://golamrabbbiazad.pages.dev/sitemap.xml
