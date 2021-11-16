@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "golamrabbiazad.pages.dev",
+  "name": "golamrabbiazad.vercel.app",
   "version": "1.0.0",
   "description": "Official portfolio site of Golamrabbi Azad.",
-  "repository": "https://github.com/golamrabbiazad/golamrabbiazad.pages.dev",
+  "repository": "https://github.com/golamrabbiazad/golamrabbiazad.vercel.app",
   "author": "golamrabbiazad",
   "license": "MIT",
   "scripts": {

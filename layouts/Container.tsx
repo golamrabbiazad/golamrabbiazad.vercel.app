@@ -38,7 +38,7 @@ export default function Container({ children, ...customMeta }) {
     title: "Golamrabbi Azad - Developer, Freelancer, Youtuber",
     description:
       "Full-stack Engineer, TypeScript Enthusiast, and video creator.",
-    image: "https://golamrabbiazad.pages.dev/static/images/banner.png",
+    image: "https://golamrabbiazad.vercel.app/static/images/banner.png",
     type: "website",
     ...customMeta,
   };
@@ -51,7 +51,7 @@ export default function Container({ children, ...customMeta }) {
         <meta name="description" content={meta.description} />
         <meta
           property="og:url"
-          content={`https://golamrabbiazad.pages.dev${router.asPath}`}
+          content={`https://golamrabbiazad.vercel.app${router.asPath}`}
         />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Golamrabbi Azad" />
@@ -64,7 +64,7 @@ export default function Container({ children, ...customMeta }) {
         <meta property="twitter:image" content={meta.image} />
         <link
           rel="canonical"
-          href={`https://golamrabbiazad.pages.dev${router.asPath}`}
+          href={`https://golamrabbiazad.vercel.app${router.asPath}`}
         />
         {/* {meta.date && (
           <meta property="article:published_time" content={meta.date} />

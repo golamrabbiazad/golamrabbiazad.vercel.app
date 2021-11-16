@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://golamrabbbiazad.pages.dev/sitemap.xml
+Sitemap: https://golamrabbbiazad.vercel.app/sitemap.xml
