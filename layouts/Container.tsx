@@ -1,12 +1,12 @@
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import NextLink from "next/link";
 import cn from "classnames";
 import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Footer from "../components/Footer";
 
-function NavItem({ href, text }) {
+function NavItem({ href, text }: { href: string; text: string }) {
   const router = useRouter();
   const isActive = router.asPath === href;
 
@@ -26,7 +26,7 @@ function NavItem({ href, text }) {
   );
 }
 
-export default function Container({ children, ...customMeta }) {
+const Container = ({ children, ...customMeta }) => {
   const [mounted, setMounted] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
 
@@ -129,4 +129,6 @@ export default function Container({ children, ...customMeta }) {
       </main>
     </div>
   );
-}
+};
+
+export default Container;

@@ -15,15 +15,19 @@
   },
   "dependencies": {
     "classnames": "^2.3.1",
-    "next": "^12.0.3",
+    "contentlayer": "^0.0.32",
+    "next": "^12.0.4",
     "next-themes": "^0.0.15",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "reading-time": "^1.5.0",
+    "rehype-slug": "^5.0.0",
+    "remark-gfm": "^3.0.1"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.0.4",
     "@tailwindcss/typography": "^0.4.1",
-    "@types/node": "^16.11.7",
+    "@types/node": "^16.11.9",
     "@types/react": "^17.0.35",
     "@types/react-dom": "^17.0.11",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
@@ -32,9 +36,10 @@
     "eslint": "<8.0.0",
     "eslint-config-next": "^12.0.4",
     "eslint-plugin-react": "^7.27.0",
+    "next-contentlayer": "^0.0.32",
     "postcss": "^8.3.11",
     "prettier": "^2.4.1",
     "tailwindcss": "^2.2.19",
-    "typescript": "^4.4.4"
+    "typescript": "^4.5.2"
   }
 }
