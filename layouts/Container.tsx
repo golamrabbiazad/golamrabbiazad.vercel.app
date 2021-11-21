@@ -69,6 +69,11 @@ const Container = ({ children, ...customMeta }) => {
         {/* {meta.date && (
           <meta property="article:published_time" content={meta.date} />
         )} */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4099345335618409"
+          crossOrigin="anonymous"
+        />
       </Head>
       <div className="flex flex-col justify-center px-8">
         <nav className="flex items-start justify-between w-full relative max-w-2xl border-gray-200 dark:border-gray-700 mx-auto pt-8 pb-8 sm:pb-16 text-gray-900 bg-gray-50 dark:bg-gray-900 bg-opacity-60 dark:text-gray-100">
