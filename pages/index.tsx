@@ -15,7 +15,7 @@ export default function Home() {
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-16">
               I enjoy working with best stack MERN or GRAND to build complex web
-              applicaions.
+              applications.
             </p>
           </div>
           <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
