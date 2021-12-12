@@ -15,8 +15,8 @@
   },
   "dependencies": {
     "classnames": "^2.3.1",
-    "contentlayer": "^0.0.32",
-    "next": "^12.0.5",
+    "contentlayer": "^0.0.33",
+    "next": "^12.0.7",
     "next-themes": "^0.0.15",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -25,21 +25,22 @@
     "remark-gfm": "^3.0.1"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^12.0.4",
-    "@tailwindcss/typography": "^0.4.1",
-    "@types/node": "^16.11.9",
-    "@types/react": "^17.0.35",
+    "@next/eslint-plugin-next": "^12.0.7",
+    "@tailwindcss/typography": "^0.5.0",
+    "@types/node": "^16.11.12",
+    "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
-    "@typescript-eslint/eslint-plugin": "^5.4.0",
-    "@typescript-eslint/parser": "^5.4.0",
+    "@typescript-eslint/eslint-plugin": "^5.6.0",
+    "@typescript-eslint/parser": "^5.6.0",
     "autoprefixer": "^10.4.0",
-    "eslint": "<8.0.0",
-    "eslint-config-next": "^12.0.4",
-    "eslint-plugin-react": "^7.27.0",
-    "next-contentlayer": "^0.0.32",
-    "postcss": "^8.3.11",
-    "prettier": "^2.4.1",
-    "tailwindcss": "^2.2.19",
-    "typescript": "^4.5.2"
+    "cssnano": "^5.0.12",
+    "eslint": "^8.4.1",
+    "eslint-config-next": "^12.0.7",
+    "eslint-plugin-react": "^7.27.1",
+    "next-contentlayer": "^0.0.33",
+    "postcss": "^8.4.4",
+    "prettier": "^2.5.1",
+    "tailwindcss": "^3.0.1",
+    "typescript": "^4.5.3"
   }
 }

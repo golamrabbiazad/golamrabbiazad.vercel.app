@@ -20,7 +20,7 @@ const Blog: React.FC<{ posts: Blog[] }> = ({ posts }) => {
           Blog
         </h1>
 
-        <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black">
+        <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black dark:text-gray-400">
           All Posts
         </h3>
 
