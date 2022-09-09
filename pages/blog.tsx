@@ -1,11 +1,10 @@
-import { GetStaticProps } from "next";
-import { allBlogs } from ".contentlayer/data";
-import Container from "../layouts/Container";
+import { allPosts } from "contentlayer/generated";
 import BlogPost from "../components/BlogPost";
 import { pick } from "../lib/utils";
-import type { Blog } from ".contentlayer/types";
+import type { Post } from "contentlayer/generated";
+import Container from "../components/Container";
 
-const Blog: React.FC<{ posts: Blog[] }> = ({ posts }) => {
+const Blog: React.FC<{ posts: Post[] }> = ({ posts }) => {
   const filteredBlogPosts = posts.sort(
     (a, b) => Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt)),
   );
@@ -38,9 +37,9 @@ const Blog: React.FC<{ posts: Blog[] }> = ({ posts }) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = () => {
-  const posts = allBlogs.map((post) =>
-    pick(post, ["slug", "title", "summary", "publishedAt", "image"]),
+export async function getStaticProps() {
+  const posts = allPosts.map((post) =>
+    pick(post, ["slug", "title", "summary", "publishedAt", "image", "body"]),
   );
 
   return {
@@ -48,6 +47,6 @@ export const getStaticProps: GetStaticProps = () => {
       posts,
     },
   };
-};
+}
 
 export default Blog;

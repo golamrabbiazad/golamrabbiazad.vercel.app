@@ -1,10 +1,8 @@
-import { GetStaticPaths, GetStaticProps } from "next";
 import { useMDXComponent } from "next-contentlayer/hooks";
 import BlogLayout from "../../layouts/BlogLayout";
-import { allBlogs } from ".contentlayer/data";
-import type { Blog } from ".contentlayer/types";
+import { allPosts, Post } from "contentlayer/generated";
 
-const Slug: React.FC<{ post: Blog }> = ({ post }) => {
+export default function Slug({ post }: { post: Post }) {
   const Component = useMDXComponent(post.body.code);
 
   return (
@@ -12,19 +10,19 @@ const Slug: React.FC<{ post: Blog }> = ({ post }) => {
       <Component />
     </BlogLayout>
   );
-};
+}
 
-export const getStaticPaths: GetStaticPaths = () => {
-  const posts = allBlogs.map((post: Blog) => ({ params: { slug: post.slug } }));
+export async function getStaticPaths() {
+  const posts = allPosts.map((post: Post) => ({ params: { slug: post.slug } }));
 
   return {
     paths: posts,
     fallback: false,
   };
-};
+}
 
-export const getStaticProps: GetStaticProps = ({ params }) => {
-  const post = allBlogs.find((post: Blog) => post.slug === params.slug);
+export async function getStaticProps({ params }: { params: any }) {
+  const post = allPosts.find((post: Post) => post.slug === params.slug);
 
   return {
     props: {
@@ -32,6 +30,4 @@ export const getStaticProps: GetStaticProps = ({ params }) => {
     },
     revalidate: 60,
   };
-};
-
-export default Slug;
+}

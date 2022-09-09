@@ -18,10 +18,10 @@ const computedFields: ComputedFields = {
   },
 };
 
-const Blog = defineDocumentType(() => ({
-  name: "Blog",
+const Post = defineDocumentType(() => ({
+  name: "Post",
   filePathPattern: "**/*.mdx",
-  bodyType: "mdx",
+  contentType: "mdx",
   fields: {
     title: { type: "string", required: true },
     publishedAt: { type: "string", required: true },
@@ -31,13 +31,12 @@ const Blog = defineDocumentType(() => ({
   computedFields,
 }));
 
-const contentLayerConfig = makeSource({
+export default makeSource({
   contentDirPath: "data",
-  documentTypes: [Blog],
+  documentTypes: [Post],
+  disableImportAliasWarning: true,
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [rehypeSlug],
   },
 });
-
-export default contentLayerConfig;

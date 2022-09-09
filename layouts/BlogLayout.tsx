@@ -1,9 +1,13 @@
-import { Blog } from ".contentlayer/types";
-import Container from "./Container";
+import { PropsWithChildren } from "react";
+import { Post } from "contentlayer/generated";
 import Image from "next/image";
 import { format, parseISO } from "date-fns";
+import Container from "../components/Container";
 
-const BlogLayout: React.FC<{ post: Blog }> = ({ children, post }) => {
+export default function BlogLayout({
+  children,
+  post,
+}: PropsWithChildren<{ post: Post }>) {
   return (
     <Container
       title={`${post.title} - Golamrabbi Azad`}
@@ -40,6 +44,4 @@ const BlogLayout: React.FC<{ post: Blog }> = ({ children, post }) => {
       </article>
     </Container>
   );
-};
-
-export default BlogLayout;
+}
