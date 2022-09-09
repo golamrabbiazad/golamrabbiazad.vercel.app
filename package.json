@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "golamrabbiazad.vercel.app",
   "version": "1.0.0",
   "description": "Official portfolio site of Golamrabbi Azad.",
@@ -40,7 +39,7 @@
     "next-contentlayer": "^0.0.33",
     "postcss": "^8.4.4",
     "prettier": "^2.5.1",
-    "tailwindcss": "^3.0.1",
-    "typescript": "^4.5.3"
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.8.3"
   }
 }
