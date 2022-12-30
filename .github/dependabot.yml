@@ -1,0 +1,25 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    # Allow up to 10 open pull requests
+    open-pull-requests-limit: 10
+    # Enable version updates for npm
+  - package-ecosystem: "npm"
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "weekly"
+      time: "09:00"
+      # Bangladesh Standard Time (UTC +06:00)
+      timezone: "Asia/Dhaka"
+      # Check for npm updates on Sundays
+      day: "friday"
+    # Allow up to 5 open pull requests for npm dependencies
+    open-pull-requests-limit: 5
+    # Increase the version requirements only when required
+    versioning-strategy: increase-if-necessary
+    labels:
+      - "dependencies"
+      - "npm"
