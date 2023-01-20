@@ -5,7 +5,7 @@ import Container from "../components/Container";
 export default function About() {
   return (
     <Container title="About - Golamrabbi Azad">
-      <div className="flex flex-col justify-center items-center max-w-2xl mx-auto mb-16 w-full">
+      <div className="w-full flex flex-col justify-center items-center mx-auto mb-16">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
           About Me
         </h1>
@@ -32,16 +32,16 @@ export default function About() {
           </ul>
           <h2>Bio</h2>
           <h3>Job Title</h3>
-          <p>Golamrabbi Azad, Full-stack Developer | MERN Stack</p>
+          <p>Golamrabbi Azad, Full-Stack Developer | MERN Stack</p>
 
           <h3>Education</h3>
-          <p className="flex flex-col">
-            Golamrabbi Azad is studying Computer Science & Engineering from
-            National University of Bangladesh.
-            <span className="font-bold italic">Session: 2017-2018</span>
+          <p>
+            Studying Computer Science & Engineering from National University of
+            Bangladesh.
           </p>
+          <span className="font-bold italic">Session: 2017-2018</span>
 
-          <h2>Photos</h2>
+          <h2>Photo</h2>
           <div className="flex gap-6">
             <Image
               alt="Golamrabbi Azad"

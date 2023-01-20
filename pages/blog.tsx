@@ -1,8 +1,10 @@
-import { allPosts } from "contentlayer/generated";
 import BlogPost from "../components/BlogPost";
-import { pick } from "../lib/utils";
-import type { Post } from "contentlayer/generated";
 import Container from "../components/Container";
+
+import type { Post } from "contentlayer/generated";
+import { allPosts } from "contentlayer/generated";
+
+import { pick } from "../lib/utils";
 
 const Blog: React.FC<{ posts: Post[] }> = ({ posts }) => {
   const filteredBlogPosts = posts.sort(
