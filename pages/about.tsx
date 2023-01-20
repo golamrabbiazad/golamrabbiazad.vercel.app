@@ -21,10 +21,7 @@ export default function About() {
               <a href="https://github.com/golamrabbiazad">@golamrabbiazad</a>
             </li>
             <li>
-              Website:{" "}
-              <Link href="/">
-                <a>https://golamrabbiazad.vercel.app</a>
-              </Link>
+              Website: <Link href="/">https://golamrabbiazad.vercel.app</Link>
             </li>
             <li>
               LinkedIn:{" "}
@@ -53,14 +50,6 @@ export default function About() {
               height={460}
               className="rounded-md"
               src="/avatar.jpg"
-            ></Image>
-            <Image
-              alt="Golamrabbi Azad"
-              width={400}
-              quality={100}
-              height={460}
-              className="rounded-md"
-              src="https://scontent.cdninstagram.com/v/t51.2885-15/278099346_669627207643960_8452307979631279876_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=scontent.cdninstagram.com&_nc_cat=104&_nc_ohc=BhrRu3IyH2UAX_-2jP8&edm=AJBgZrYBAAAA&ccb=7-5&ig_cache_key=MjgxMzU1OTEzNTEzMDgxMjUyNQ%3D%3D.2-ccb7-5&oh=00_AT-9M_YnHvq2N2CLHLQyG8K6ZYKRySvMKUntYgOMZS9tMw&oe=63215238&_nc_sid=78c662&dl=1"
             ></Image>
           </div>
         </div>

@@ -14,10 +14,11 @@ export default function NotFound() {
           something wrong. I&apos;m guessing you spelled something wrong. Can
           you double check that URL?
         </p>
-        <Link href="/">
-          <a className="p-1 sm:p-4 font-bold mx-auto bg-gray-200 dark:bg-gray-800 text-center rounded-md text-black dark:text-white">
-            Return Home
-          </a>
+        <Link
+          href="/"
+          className="p-1 sm:p-4 font-bold mx-auto bg-gray-200 dark:bg-gray-800 text-center rounded-md text-black dark:text-white"
+        >
+          Return Home
         </Link>
       </div>
     </Container>

@@ -32,7 +32,7 @@ const Post = defineDocumentType(() => ({
 }));
 
 export default makeSource({
-  contentDirPath: "data",
+  contentDirPath: "posts",
   documentTypes: [Post],
   disableImportAliasWarning: true,
   mdx: {
