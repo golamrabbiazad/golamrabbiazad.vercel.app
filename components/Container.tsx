@@ -55,6 +55,7 @@ export default function Container({
         <title>{meta.title}</title>
         <meta name="robots" content="follow, index" />
         <meta name="description" content={meta.description} />
+        <meta name="view-transition" content="same-origin" />
         <meta
           property="og:url"
           content={`https://golamrabbiazad.vercel.app${router.asPath}`}
