@@ -14,7 +14,7 @@ export default function Home() {
                 Golamrabbi Azad
               </h1>
               <h2 className="text-gray-700 dark:text-gray-200 mb-4">
-                Software Engineer at <span className="font-medium">Manha</span>
+                Software Engineer with experience in <span className="font-medium">web development</span> & 🐞 OSS Contributor.
               </h2>
               <p className="text-gray-600 dark:text-gray-400 mb-16">
                 I enjoy working with best stack MERN or GRAND to build complex
