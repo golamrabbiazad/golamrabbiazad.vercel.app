@@ -1,7 +1,7 @@
 import BlogPost from "../components/BlogPost";
 import Container from "../components/Container";
 
-import type { Post } from "contentlayer/generated";
+import { Post } from "contentlayer/generated";
 import { allPosts } from "contentlayer/generated";
 
 import { pick } from "../lib/utils";

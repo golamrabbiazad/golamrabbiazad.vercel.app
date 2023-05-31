@@ -1,5 +1,6 @@
-import type { Post } from "contentlayer/generated";
 import Link from "next/link";
+
+import { Post } from "contentlayer/generated";
 
 export default function BlogPost({
   title,
