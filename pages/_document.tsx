@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="en" suppressHydrationWarning>
       <Head>
         <link
           rel="preload"
@@ -13,11 +13,6 @@ export default function Document() {
         />
         <link rel="shortcut_icon" href="/static/favicons/favicon.ico" />
         <link rel="manifest" href="/static/favicons/site.webmanifest" />
-        <link
-          rel="preconnect"
-          href="https://cdn.usefathom.com"
-          crossOrigin=""
-        />
         <meta name="theme-color" content="#ffffff" />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta

@@ -1,6 +1,7 @@
-import Link from "next/link";
-import Image from "next/image";
-import Container from "../components/Container";
+import Image from "next/image"
+import Link from "next/link"
+
+import Container from "../components/Container"
 
 export default function About() {
   return (
@@ -14,18 +15,34 @@ export default function About() {
           <ul>
             <li>
               Twitter:{" "}
-              <a href="https://twitter.com/golamrabbiazad">@golamrabbiazad</a>
+              <a
+                href="https://twitter.com/golamrabbiazad"
+                target="_blank"
+                rel="noreferrer"
+              >
+                @golamrabbiazad
+              </a>
             </li>
             <li>
               GitHub:{" "}
-              <a href="https://github.com/golamrabbiazad">@golamrabbiazad</a>
+              <a
+                href="https://github.com/golamrabbiazad"
+                target="_blank"
+                rel="noreferrer"
+              >
+                @golamrabbiazad
+              </a>
             </li>
             <li>
               Website: <Link href="/">https://golamrabbiazad.vercel.app</Link>
             </li>
             <li>
               LinkedIn:{" "}
-              <a href="https://www.linkedin.com/in/golamrabbiazad/">
+              <a
+                href="https://www.linkedin.com/in/golamrabbiazad/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 https://www.linkedin.com/in/golamrabbiazad
               </a>
             </li>
@@ -36,10 +53,12 @@ export default function About() {
 
           <h3>Education</h3>
           <p>
-            Studying Computer Science & Engineering from National University of
-            Bangladesh.
+            B.Sc in Computer Science & Engineering
+            <p className="font-bold -mt-0.5">
+              National University of Bangladesh
+            </p>
           </p>
-          <span className="font-bold italic">Session: 2017-2018</span>
+          <span className="italic">Session: 2017-2018</span>
 
           <h2>Photo</h2>
           <div className="flex gap-6">
@@ -50,10 +69,10 @@ export default function About() {
               height={460}
               className="rounded-md"
               src="/avatar.jpg"
-            ></Image>
+            />
           </div>
         </div>
       </div>
     </Container>
-  );
+  )
 }

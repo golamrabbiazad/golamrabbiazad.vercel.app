@@ -6,7 +6,7 @@ $ gh repo clone golamrabbiazad/golamrabbiazad.vercel.app
 
 $ cd golamrabbiazad.vercel.app/
 
-$ npm i --force # because of use-delay lib => @react 16.8
+$ npm i
 
 $ npm run dev
 ```
