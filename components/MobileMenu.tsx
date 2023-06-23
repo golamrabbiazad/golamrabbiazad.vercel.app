@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import cn from "classnames";
-import useDelayedRender from "use-delayed-render";
-import styles from "styles/mobile-menu.module.css";
 
 import CrossIcon from "./CrossIcon";
 import MenuIcon from "./MenuIcon";
+import useDelayedRender from "lib/use-delayed-render";
+import styles from "styles/mobile-menu.module.css";
 
 export default function MobileMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
