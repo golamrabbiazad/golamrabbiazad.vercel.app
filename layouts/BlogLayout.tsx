@@ -3,7 +3,7 @@ import { PropsWithChildren } from "react";
 import { format, parseISO } from "date-fns";
 
 import { Post } from "contentlayer/generated";
-import Container from "../components/Container";
+import Container from "@/components/Container";
 
 export default function BlogLayout({
   children,
