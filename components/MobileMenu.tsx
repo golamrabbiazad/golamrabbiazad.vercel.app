@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import cn from "classnames";
 
-import CrossIcon from "./CrossIcon";
-import MenuIcon from "./MenuIcon";
+import { CrossIcon, MenuIcon } from "./icons";
 import useDelayedRender from "lib/use-delayed-render";
 import styles from "styles/mobile-menu.module.css";
 

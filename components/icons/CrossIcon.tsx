@@ -1,4 +1,4 @@
-export default function CrossIcon(props: JSX.IntrinsicElements["svg"]) {
+export function CrossIcon(props: JSX.IntrinsicElements["svg"]) {
   return (
     <svg
       className="h-5 w-5 absolute text-gray-900 dark:text-gray-100"

@@ -1,4 +1,4 @@
-export default function MenuIcon(props: JSX.IntrinsicElements["svg"]) {
+export function MenuIcon(props: JSX.IntrinsicElements["svg"]) {
   return (
     <svg
       className="h-5 w-5 absolute text-gray-900 dark:text-gray-100"
