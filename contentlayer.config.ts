@@ -18,7 +18,7 @@ const computedFields: ComputedFields = {
   },
 };
 
-const Post = defineDocumentType(() => ({
+export const Post = defineDocumentType(() => ({
   name: "Post",
   filePathPattern: "**/*.mdx",
   contentType: "mdx",
@@ -38,5 +38,9 @@ export default makeSource({
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [rehypeSlug],
+  },
+  onSuccess: async (importData) => {
+    const { allDocuments } = await importData()
+    console.log('allDocuments', allDocuments.length)
   },
 });
