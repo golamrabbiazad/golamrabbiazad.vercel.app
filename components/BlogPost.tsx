@@ -1,6 +1,5 @@
-import Link from "next/link";
-
-import { Post } from "contentlayer/generated";
+import Link from "next/link"
+import { Post } from "contentlayer/generated"
 
 export default function BlogPost({
   title,
@@ -18,5 +17,5 @@ export default function BlogPost({
         <p className="text-gray-600 dark:text-gray-400">{summary}</p>
       </div>
     </Link>
-  );
+  )
 }
