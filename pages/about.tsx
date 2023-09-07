@@ -50,16 +50,10 @@ export default function About() {
           <h2>Bio</h2>
           <h3>Job Title</h3>
           <p>Golamrabbi Azad, Full-Stack Developer | MERN Stack</p>
-
           <h3>Education</h3>
-          <p>
-            B.Sc in Computer Science & Engineering
-            <p className="font-bold -mt-0.5">
-              National University of Bangladesh
-            </p>
-          </p>
+          B.Sc in Computer Science & Engineering
+          <p className="font-bold -mt-0.5">National University of Bangladesh</p>
           <span className="italic">Session: 2017-2018</span>
-
           <h2>Photo</h2>
           <div className="flex gap-6">
             <Image

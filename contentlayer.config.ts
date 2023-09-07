@@ -1,22 +1,22 @@
 import {
+  ComputedFields,
   defineDocumentType,
   makeSource,
-  ComputedFields,
-} from "contentlayer/source-files";
-import readingTime from "reading-time";
-import rehypeSlug from "rehype-slug";
-import remarkGfm from "remark-gfm";
+} from "contentlayer/source-files"
+import readingTime from "reading-time"
+import rehypeSlug from "rehype-slug"
+import remarkGfm from "remark-gfm"
 
 const computedFields: ComputedFields = {
   readingTime: {
     type: "json",
-    resolve: (doc) => readingTime(doc.body.raw),
+    resolve: (post) => readingTime(post.body.raw),
   },
   slug: {
     type: "string",
-    resolve: (doc) => doc._raw.sourceFileName.replace(/\.mdx$/, ""),
+    resolve: (post) => post._raw.sourceFileName.replace(/\.mdx$/, ""),
   },
-};
+}
 
 export const Post = defineDocumentType(() => ({
   name: "Post",
@@ -29,18 +29,13 @@ export const Post = defineDocumentType(() => ({
     image: { type: "string", required: true },
   },
   computedFields,
-}));
+}))
 
 export default makeSource({
   contentDirPath: "posts",
   documentTypes: [Post],
-  disableImportAliasWarning: true,
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [rehypeSlug],
   },
-  onSuccess: async (importData) => {
-    const { allDocuments } = await importData()
-    console.log('allDocuments', allDocuments.length)
-  },
-});
+})
