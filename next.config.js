@@ -1,8 +1,6 @@
 const { withContentlayer } = require("next-contentlayer")
 
-module.exports = withContentlayer({
-  images: {
-    formats: ["image/avif", "image/webp"],
-  },
-  reactStrictMode: true,
-})
+/** @type {import('next').NextConfig} */
+const nextConfig = {}
+
+module.exports = withContentlayer(nextConfig)

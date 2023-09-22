@@ -1,8 +1,13 @@
-const { spacing, fontFamily } = require("tailwindcss/defaultTheme");
+import type { Config } from "tailwindcss"
+import { fontFamily, spacing } from "tailwindcss/defaultTheme"
 
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./pages/**/*.tsx", "./components/**/*.tsx", "./layouts/**/*.tsx"],
+const config: Config = {
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./layouts/**/*.tsx",
+  ],
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
@@ -24,7 +29,7 @@ module.exports = {
       fontFamily: {
         sans: ["Inter", ...fontFamily.sans],
       },
-      typography: (theme) => ({
+      typography: (theme: (style: string) => string) => ({
         DEFAULT: {
           css: {
             color: theme("colors.gray.700"),
@@ -94,4 +99,6 @@ module.exports = {
     typography: ["dark"],
   },
   plugins: [require("@tailwindcss/typography")],
-};
+}
+
+export default config
