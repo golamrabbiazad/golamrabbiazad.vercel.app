@@ -1,16 +1,10 @@
 import { allPosts, Post } from "contentlayer/generated"
 import { useMDXComponent } from "next-contentlayer/hooks"
 
-import BlogLayout from "../../layouts/BlogLayout"
-
 export default function Slug({ post }: { post: Post }) {
   const Component = useMDXComponent(post.body.code)
 
-  return (
-    <BlogLayout post={post}>
-      <Component />
-    </BlogLayout>
-  )
+  return <Component />
 }
 
 export async function getStaticPaths() {

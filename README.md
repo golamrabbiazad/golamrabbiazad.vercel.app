@@ -1,6 +1,6 @@
 # golamrabbiazad.vercel.app
 
-✨ My portfolio is built with Next.js 13, TailwindCSS, and Vercel.
+✨ My portfolio is built with Next.js 13, TailwindCSS, Vercel and Cloudflare.
 
 ```bash
 gh repo clone golamrabbiazad/golamrabbiazad.vercel.app

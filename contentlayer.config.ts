@@ -14,7 +14,7 @@ const computedFields: ComputedFields = {
   },
   slug: {
     type: "string",
-    resolve: (post) => post._raw.sourceFileName.replace(/\.mdx$/, ""),
+    resolve: (doc) => `/${doc._raw.flattenedPath}`,
   },
   slugAsParams: {
     type: "string",
