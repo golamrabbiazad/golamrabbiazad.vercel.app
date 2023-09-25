@@ -4,10 +4,10 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
-      allow: "/",
-      disallow: "/private/",
+      // allow: "/",
+      // disallow: "/private/",
     },
-    sitemap: "https://golamrabbiazad.pages.dev/sitemap.xml",
+    sitemap: "https://golamrabbiazad.vercel.app/sitemap.xml",
     host: "https://vercel.com",
   }
 }

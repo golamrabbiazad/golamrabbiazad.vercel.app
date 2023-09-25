@@ -1,7 +1,4 @@
-import Image from "next/image"
 import Link from "next/link"
-
-import avater from "../avatar.jpg"
 
 export default function About() {
   return (
