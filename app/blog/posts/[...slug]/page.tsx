@@ -1,9 +1,11 @@
-import { PropsWithChildren, ReactNode } from "react"
 import { Metadata } from "next"
 import Image from "next/image"
 import { notFound } from "next/navigation"
-import { allPosts, Post } from "contentlayer/generated"
+import { allPosts } from "contentlayer/generated"
 import { format, parseISO } from "date-fns"
+
+import { Mdx } from "@/components/mdx-component"
+import avatar from "@/app/avatar.jpg"
 
 interface PostProps {
   params: {
@@ -39,10 +41,7 @@ export async function generateStaticParams(): Promise<PostProps["params"][]> {
   }))
 }
 
-export default async function BlogLayout({
-  params,
-  children,
-}: PostProps & { children: ReactNode }) {
+export default async function PostPage({ params }: PostProps) {
   const post = await getPostFromParams(params)
 
   if (!post) {
@@ -54,10 +53,10 @@ export default async function BlogLayout({
       <h1 className="mb-4 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
         {post.title}
       </h1>
-      <div className="mt-2 flex w-full flex-col items-start justify-between md:flex-row md:items-center">
+      <div className="mb-12 mt-2 flex w-full flex-col items-start justify-between md:flex-row md:items-center">
         <div className="flex items-center">
           <Image
-            src="/avatar.jpg"
+            src={avatar}
             height={24}
             width={24}
             alt="Golamrabbi Azad"
@@ -72,8 +71,8 @@ export default async function BlogLayout({
           {post.readingTime.text}
         </p>
       </div>
-      <div className="prose dark:prose-dark mt-4 w-full max-w-none">
-        {children}
+      <div className="prose dark:prose-invert mt-4 w-full max-w-none">
+        <Mdx code={post.body.code} />
       </div>
     </article>
   )

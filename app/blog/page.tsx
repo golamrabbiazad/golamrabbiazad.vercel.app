@@ -9,11 +9,11 @@ export default function Blog() {
 
   return (
     <div className="mx-auto mb-16 flex max-w-2xl flex-col items-start justify-center">
-      <h1 className="mb-4 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
+      <h1 className="mb-2 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
         Blog
       </h1>
 
-      <h3 className="mb-4 mt-8 text-2xl font-bold tracking-tight text-black dark:text-gray-400">
+      <h3 className="mb-4 mt-8 text-2xl font-bold tracking-tight text-black dark:text-gray-200">
         All Posts
       </h3>
 

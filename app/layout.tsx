@@ -35,10 +35,13 @@ export const metadata: Metadata = {
   },
   publisher: "Cloudflare",
   creator: "@golamrabbiazad",
-
   icons: {
     shortcut: "/favicon.ico",
     icon: "/favicon.ico",
+  },
+  robots: {
+    follow: true,
+    index: true,
   },
 }
 

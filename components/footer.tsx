@@ -20,7 +20,7 @@ export default function Footer() {
     <footer className="mx-auto flex w-full max-w-2xl flex-col items-center">
       <p className="mb-6 flex flex-col items-center">
         Made with 💙 in Joypurhat
-        <span>using Next.js, Typescript, and Vercel.</span>
+        <span>using TypeScript, Next.js, and Vercel.</span>
       </p>
       <p className="mx-auto flex w-full justify-center pb-2 text-gray-700 transition hover:text-gray-500 dark:text-gray-400">
         <Link
