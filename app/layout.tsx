@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     name: "Golamrabbi Azad",
     url: "https://twitter.com/golamrabbiazad",
   },
-  publisher: "Cloudflare",
+  publisher: "Vercel",
   creator: "@golamrabbiazad",
   icons: {
     shortcut: "/favicon.ico",
