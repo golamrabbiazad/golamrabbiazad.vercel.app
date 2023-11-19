@@ -55,7 +55,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body
         className={`${poppins.className} min-h-screen bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-50`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem={false}
+          disableTransitionOnChange
+        >
           <Navbar />
           <main className="flex">{children}</main>
           <Footer />

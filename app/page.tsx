@@ -8,12 +8,12 @@ export default function Home() {
       <div className="mx-auto w-[80px] sm:mb-0 sm:w-[176px]">
         <Image
           alt="Golamrabbi Azad"
-          height={176}
-          width={176}
+          height={500}
+          width={500}
           src={profileImage}
           sizes="30vw"
           priority
-          className="rounded-full"
+          className="h-full w-full rounded-full"
         />
       </div>
 
