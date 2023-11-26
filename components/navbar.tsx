@@ -12,7 +12,7 @@ export function Navbar() {
               <MobileMenu />
               <NavItem href="/" text="Home" />
               <NavItem href="/blog" text="Blog" />
-              <NavItem href="/about" text="About" />
+              <NavItem href="/work" text="Work" />
               <NavItem
                 href="https://github.com/golamrabbiazad?tab=repositories"
                 text="Projects"
