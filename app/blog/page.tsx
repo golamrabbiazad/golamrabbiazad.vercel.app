@@ -2,6 +2,8 @@ import { allPosts } from "contentlayer/generated"
 
 import BlogPost from "@/components/blog-post"
 
+export const runtime = "edge"
+
 export default function Blog() {
   const filteredBlogPosts = allPosts.sort(
     (a, b) => Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
@@ -9,7 +11,7 @@ export default function Blog() {
 
   return (
     <div className="mx-auto mb-16 flex max-w-2xl flex-col items-start justify-center">
-      <h1 className="mb-2 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
+      <h1 className="mb-2 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
         Blog
       </h1>
 

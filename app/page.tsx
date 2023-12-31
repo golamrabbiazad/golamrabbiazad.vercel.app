@@ -1,6 +1,8 @@
 import Image from "next/image"
 
-import profileImage from "./avatar.jpg"
+import profileImage from "./assets/images/profile-photo.png"
+
+export const runtime = "edge"
 
 export default function Home() {
   return (
@@ -13,12 +15,12 @@ export default function Home() {
           src={profileImage}
           sizes="30vw"
           priority
-          className="h-full w-full rounded-full"
+          className="h-full w-full rounded-full object-contain"
         />
       </div>
 
       <div className="ml-4 flex flex-col pr-8 text-center">
-        <h1 className="text-3xl font-bold tracking-tight text-black drop-shadow-md dark:text-white dark:drop-shadow-md md:text-5xl">
+        <h1 className="text-3xl font-bold tracking-tight text-black drop-shadow-md md:text-5xl dark:text-white dark:drop-shadow-md">
           Hi! I&apos;m Rabbi.
         </h1>
         <h2 className="mt-3 text-xl text-gray-700 dark:text-gray-200">

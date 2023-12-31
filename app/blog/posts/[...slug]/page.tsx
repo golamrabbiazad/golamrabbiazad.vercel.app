@@ -5,7 +5,9 @@ import { allPosts } from "contentlayer/generated"
 import { format, parseISO } from "date-fns"
 
 import { Mdx } from "@/components/mdx-component"
-import avatar from "@/app/avatar.jpg"
+import avatar from "@/app/assets/images/profile-photo.png"
+
+export const runtime = "edge"
 
 interface PostProps {
   params: {
@@ -50,7 +52,7 @@ export default async function PostPage({ params }: PostProps) {
 
   return (
     <article className="mx-auto mb-16 flex w-full max-w-2xl flex-col items-start justify-center">
-      <h1 className="mb-4 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
+      <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
         {post.title}
       </h1>
       <div className="mb-12 mt-2 flex w-full flex-col items-start justify-between md:flex-row md:items-center">
@@ -67,7 +69,7 @@ export default async function PostPage({ params }: PostProps) {
             {format(parseISO(post.publishedAt), "MMMM dd, yyyy")}
           </p>
         </div>
-        <p className="min-w-32 mt-2 text-sm text-gray-600 dark:text-gray-400 md:mt-0">
+        <p className="mt-2 min-w-32 text-sm text-gray-600 md:mt-0 dark:text-gray-400">
           {post.readingTime.text}
         </p>
       </div>
