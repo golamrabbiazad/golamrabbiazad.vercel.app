@@ -33,8 +33,7 @@ export default function Home() {
 
       <div className="ml-4 text-center">
         <p className="mb-16 text-xl text-gray-600 dark:text-gray-400">
-          I enjoy working with best stack MERN or GRAND to build complex web
-          applications.
+          I talk about TypeScript, Next.js, React.js, and JavaScript ecosystems.
         </p>
       </div>
 

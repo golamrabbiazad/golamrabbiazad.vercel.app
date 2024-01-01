@@ -53,7 +53,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${poppins.className} min-h-screen bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-50`}
+        className={`${poppins.className} bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-50`}
       >
         <ThemeProvider
           attribute="class"
@@ -62,7 +62,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           disableTransitionOnChange
         >
           <Navbar />
-          <main className="flex">{children}</main>
+          <main className="flex flex-col">{children}</main>
           <Footer />
           <Analytics />
         </ThemeProvider>

@@ -1,19 +1,4 @@
-import { PropsWithChildren } from "react"
-import Link from "next/link"
-
-const ExternalLink = ({
-  href,
-  children,
-}: PropsWithChildren<{ href: string }>) => (
-  <a
-    href={href}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-gray-500 transition hover:text-gray-600"
-  >
-    {children}
-  </a>
-)
+import { ExternalLink } from "@/utils"
 
 export default function Footer() {
   return (
@@ -23,13 +8,12 @@ export default function Footer() {
         <span>using TypeScript, Next.js, and Vercel.</span>
       </p>
       <p className="mx-auto flex w-full justify-center pb-2 text-gray-700 transition hover:text-gray-500 dark:text-gray-400">
-        <Link
+        <ExternalLink
           href="https://github.com/golamrabbiazad/golamrabbiazad.vercel.app/"
-          target="_blank"
           className="border-b-2 border-b-blue-500"
         >
           view source
-        </Link>
+        </ExternalLink>
       </p>
     </footer>
   )
