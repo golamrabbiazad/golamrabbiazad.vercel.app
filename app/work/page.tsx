@@ -4,7 +4,7 @@ export const runtime = "edge"
 
 export default function Work() {
   return (
-    <div className="mx-auto mb-16 flex w-full flex-col items-center justify-center">
+    <div className="mx-auto mb-32 flex w-full flex-col items-center justify-center">
       <h1 className="mb-12 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
         Work
       </h1>
@@ -26,10 +26,7 @@ export default function Work() {
           <h2 className="mb-2 text-xl font-bold">Previous Jobs</h2>
           <div className="mb-6 flex flex-col">
             <p className="text-medium">
-              <ExternalLink
-                href="https://nextsolutionlab.com/"
-                className="font-bold"
-              >
+              <ExternalLink href="https://linkedin.com/" className="font-bold">
                 Remote
               </ExternalLink>
               , <span className="font-medium">Core Developer</span>

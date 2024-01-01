@@ -7,8 +7,6 @@ import { format, parseISO } from "date-fns"
 import { Mdx } from "@/components/mdx-component"
 import avatar from "@/app/assets/images/profile-photo.png"
 
-export const runtime = "edge"
-
 interface PostProps {
   params: {
     slug: string[]
