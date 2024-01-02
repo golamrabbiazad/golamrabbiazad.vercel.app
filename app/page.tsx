@@ -6,7 +6,7 @@ export const runtime = "edge"
 
 export default function Home() {
   return (
-    <div className="mx-auto flex h-[70vh] flex-col items-center justify-center gap-6 border-gray-200 pb-16 dark:border-gray-700">
+    <div className="mx-auto mb-12 flex h-[70vh] flex-col justify-center gap-6 border-gray-200 pb-16 dark:border-gray-700">
       <div className="mx-auto w-[80px] sm:mb-0 sm:w-[176px]">
         <Image
           alt="Golamrabbi Azad"

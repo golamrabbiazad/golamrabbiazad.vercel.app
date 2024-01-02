@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import { ExternalLink } from "@/utils"
 import cn from "classnames"
 import { useDelayedRender } from "lib/use-delayed-render"
 import styles from "styles/mobile-menu.module.css"
@@ -70,19 +71,19 @@ export function MobileMenu() {
             className="drak:border-gray-700 textr-gray-900 border-b border-gray-300 text-sm font-semibold dark:text-gray-100"
             style={{ transitionDelay: "200ms" }}
           >
-            <Link
+            <ExternalLink
               href="https://github.com/golamrabbiazad?tab=repositories"
               className="flex w-auto pb-4"
             >
               Projects
-            </Link>
+            </ExternalLink>
           </li>
           <li
             className="drak:border-gray-700 textr-gray-900 border-b border-gray-300 text-sm font-semibold dark:text-gray-100"
             style={{ transitionDelay: "200ms" }}
           >
-            <Link href="/about" className="flex w-auto pb-4">
-              About
+            <Link href="/work" className="flex w-auto pb-4">
+              Work
             </Link>
           </li>
         </ul>

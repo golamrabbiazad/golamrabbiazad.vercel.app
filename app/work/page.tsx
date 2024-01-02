@@ -4,14 +4,13 @@ export const runtime = "edge"
 
 export default function Work() {
   return (
-    <div className="mx-auto mb-32 flex w-full flex-col items-center justify-center">
-      <h1 className="mb-12 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
+    <div className="mx-auto mb-12 flex h-[70vh] flex-col justify-center">
+      <h1 className="mb-8 pl-8 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
         Work
       </h1>
-      {/* company name, location, role joining date, etc. */}
-      <div className="flex flex-col justify-center divide-x sm:flex-col md:flex-row xl:flex-row">
-        <div className="flex flex-col p-12 ">
-          <h2 className="mb-2 text-2xl font-bold">Current Job</h2>
+      <div className="flex max-w-6xl flex-col justify-center sm:flex-col md:flex-row lg:divide-x-2 xl:flex-row">
+        <div className="flex flex-col p-8">
+          <h2 className="mb-2 text-xl font-bold">Current Job</h2>
           <p className="text-xl">
             <ExternalLink href="https://www.m4yours.com/" className="font-bold">
               M4yours
@@ -22,7 +21,7 @@ export default function Work() {
           <p className="text-sm">Elephant Road, Bangladesh</p>
         </div>
 
-        <div className="flex flex-col p-12">
+        <div className="flex flex-col p-8">
           <h2 className="mb-2 text-xl font-bold">Previous Jobs</h2>
           <div className="mb-6 flex flex-col">
             <p className="text-medium">
@@ -48,7 +47,7 @@ export default function Work() {
             <p className="text-sm">Mirpur DOHS, Bangladesh</p>
           </div>
         </div>
-        <div className="flex flex-col p-12">
+        <div className="flex flex-col p-8">
           <h3 className="text-xl font-bold">Education</h3>
           B.Sc in Computer Science & Engineering
           <p className="-mt-0.5 font-bold">National University of Bangladesh</p>
