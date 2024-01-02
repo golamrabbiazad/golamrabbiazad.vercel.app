@@ -1,7 +1,7 @@
 import "./globals.css"
 
 import { ReactNode } from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Poppins } from "next/font/google"
 import { Analytics } from "@vercel/analytics/react"
 
@@ -14,11 +14,7 @@ const poppins = Poppins({
   weight: ["200", "400", "600", "800"],
 })
 
-export const metadata: Metadata = {
-  title: "Golamrabbi Azad - Developer, Freelancer, Youtuber",
-  description:
-    "Full-stack Engineer, TypeScript, Next.js, Astro.build, Node.js, Java, Golang, Docker Enthusiast, and a video creator.",
-  category: "website",
+export const viewport: Viewport = {
   themeColor: [
     {
       media: "(prefers-color-scheme: dark)",
@@ -29,6 +25,13 @@ export const metadata: Metadata = {
       color: "#ffffff",
     },
   ],
+}
+
+export const metadata: Metadata = {
+  title: "Golamrabbi Azad - SWE, Freelancer, Youtuber",
+  description:
+    "A SWE, TypeScript, Next.js, Astro.build, Node.js, Docker Enthusiast, and a Tech lover.",
+  category: "portfolio",
   authors: {
     name: "Golamrabbi Azad",
     url: "https://twitter.com/golamrabbiazad",
