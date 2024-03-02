@@ -1,7 +1,7 @@
 export function MenuIcon(props: JSX.IntrinsicElements["svg"]) {
   return (
     <svg
-      className="absolute h-5 w-5 text-gray-900 dark:text-gray-100"
+      className="absolute size-5 text-gray-900 dark:text-gray-100"
       width="20"
       height="20"
       viewBox="0 0 20 20"

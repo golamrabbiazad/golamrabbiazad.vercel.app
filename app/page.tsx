@@ -15,7 +15,7 @@ export default function Home() {
           src={profileImage}
           sizes="30vw"
           priority
-          className="h-full w-full rounded-full object-contain"
+          className="size-full rounded-full object-contain"
         />
       </div>
 

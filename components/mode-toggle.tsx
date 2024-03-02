@@ -19,7 +19,7 @@ export function ModeToggle() {
     <button
       aria-label="Toggle Dark Mode"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-      className="flex-item flex h-6 w-6 items-center justify-center rounded-md border"
+      className="flex-item flex size-6 items-center justify-center rounded-md border"
     >
       <span className="sr-only">Toggle mode</span>
       <svg
@@ -28,7 +28,7 @@ export function ModeToggle() {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="h-4 w-4"
+        className="size-4"
       >
         {isMounted ? (
           theme === "dark" ? (
