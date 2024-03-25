@@ -5,7 +5,6 @@ import { allPosts } from "contentlayer/generated"
 import { format, parseISO } from "date-fns"
 
 import { Mdx } from "@/components/mdx-component"
-import avatar from "@/app/assets/images/profile-photo.png"
 
 interface PostProps {
   params: {
@@ -44,19 +43,17 @@ export async function generateStaticParams(): Promise<PostProps["params"][]> {
 export default async function PostPage({ params }: PostProps) {
   const post = await getPostFromParams(params)
 
-  if (!post) {
-    notFound()
-  }
+  if (!post) return notFound()
 
   return (
-    <article className="mx-auto mb-16 flex w-full max-w-2xl flex-col items-start justify-center">
-      <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
+    <article className="mx-auto mt-8 flex w-full max-w-2xl flex-col items-start justify-center">
+      <h2 className="text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
         {post.title}
-      </h1>
-      <div className="mb-12 mt-2 flex w-full flex-col items-start justify-between md:flex-row md:items-center">
+      </h2>
+      <div className="flex w-full flex-col items-start justify-between space-y-8 md:flex-row md:items-center">
         <div className="flex items-center">
           <Image
-            src={avatar}
+            src={`/assets/images/profile-photo.png`}
             height={24}
             width={24}
             alt="Golamrabbi Azad"
@@ -67,11 +64,11 @@ export default async function PostPage({ params }: PostProps) {
             {format(parseISO(post.publishedAt), "MMMM dd, yyyy")}
           </p>
         </div>
-        <p className="mt-2 min-w-32 text-sm text-gray-600 md:mt-0 dark:text-gray-400">
+        <p className="min-w-32 text-end text-sm text-gray-600 md:mt-0 dark:text-gray-400">
           {post.readingTime.text}
         </p>
       </div>
-      <div className="prose dark:prose-invert mt-4 w-full max-w-none">
+      <div className="prose dark:prose-invert mt-8 min-h-[50dvh] w-full max-w-none">
         <Mdx code={post.body.code} />
       </div>
     </article>

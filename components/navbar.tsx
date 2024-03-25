@@ -7,6 +7,7 @@ export function Navbar() {
     <div className="mx-auto max-w-2xl px-4 py-10">
       <header>
         <div className="flex items-center justify-between">
+          <ModeToggle />
           <nav className="text-md space-x-6 font-medium">
             <div>
               <MobileMenu />
@@ -19,7 +20,6 @@ export function Navbar() {
               <NavItem href="/work" text="Work" />
             </div>
           </nav>
-          <ModeToggle />
         </div>
       </header>
     </div>

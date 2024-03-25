@@ -2,8 +2,8 @@ import { ExternalLink } from "@/utils"
 
 export default function Footer() {
   return (
-    <footer className="mx-auto flex w-full max-w-2xl flex-col items-center">
-      <p className="mb-6 flex flex-col items-center">
+    <footer className="mx-auto flex w-full max-w-2xl flex-col items-center py-8">
+      <p className="mb-4 flex flex-col items-center">
         Made with 💙 in Joypurhat
         <span>using TypeScript, Next.js, and Vercel.</span>
       </p>

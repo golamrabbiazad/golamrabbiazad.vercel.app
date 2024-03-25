@@ -4,6 +4,7 @@ import { ReactNode } from "react"
 import type { Metadata, Viewport } from "next"
 import { Poppins } from "next/font/google"
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import Footer from "@/components/footer"
 import { Navbar } from "@/components/navbar"
@@ -30,7 +31,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Golamrabbi Azad - SWE, Freelancer, Youtuber",
   description:
-    "A SWE, TypeScript, Next.js, Astro.build, Node.js, Docker Enthusiast, and a Tech lover.",
+    "I talk about TypeScript, Next.js, React.js, and Cloudflare ecosystems.",
   category: "portfolio",
   authors: {
     name: "Golamrabbi Azad",
@@ -49,7 +50,7 @@ export const metadata: Metadata = {
 }
 
 interface RootLayoutProps {
-  children: ReactNode
+  children: Readonly<ReactNode>
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
@@ -69,6 +70,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Footer />
           <Analytics />
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   )
