@@ -10,7 +10,7 @@ export default function Blog() {
   )
 
   return (
-    <div className="mx-auto my-12 max-w-xl flex-col justify-center lg:max-w-2xl">
+    <div className="mx-auto my-12 max-w-xl flex-col justify-center px-8 lg:max-w-2xl">
       <h2 className="mb-2 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
         Blog
       </h2>

@@ -66,7 +66,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           disableTransitionOnChange
         >
           <Navbar />
-          <main className="flex flex-col">{children}</main>
+          <main>{children}</main>
           <Footer />
           <Analytics />
         </ThemeProvider>

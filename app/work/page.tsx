@@ -4,13 +4,13 @@ export const runtime = "edge"
 
 export default function Work() {
   return (
-    <div className="mx-auto my-32 flex flex-col items-start justify-center">
-      <h1 className="text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
+    <div className="mx-auto my-12 max-w-xl flex-col justify-center px-8 lg:max-w-4xl lg:px-0">
+      <h2 className=" text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
         Work
-      </h1>
-      <div className="flex max-w-6xl flex-col justify-center py-16 sm:flex-col md:flex-row lg:divide-x-2 xl:flex-row">
-        <div className="flex flex-col pr-8">
-          <h2 className="mb-2 text-xl font-bold">Current Job</h2>
+      </h2>
+      <div className="flex max-w-6xl flex-col justify-center py-16 md:flex-row lg:flex-row lg:divide-x-2 xl:flex-row">
+        <div className="mt-4 flex flex-col lg:pr-2">
+          <h2 className="text-xl font-bold lg:mb-2">Current Job</h2>
           <p className="text-xl">
             <ExternalLink href="https://www.m4yours.com/" className="font-bold">
               M4yours
@@ -21,9 +21,9 @@ export default function Work() {
           <p className="text-sm">Elephant Road, Bangladesh</p>
         </div>
 
-        <div className="flex flex-col px-8">
-          <h2 className="mb-2 text-xl font-bold">Previous Jobs</h2>
-          <div className="mb-6 flex flex-col">
+        <div className="mt-4 flex flex-col lg:px-8">
+          <h2 className="text-xl font-bold lg:mb-2">Previous Jobs</h2>
+          <div className="mb-2 flex flex-col">
             <p className="text-medium">
               <ExternalLink href="https://linkedin.com/" className="font-bold">
                 Remote
@@ -47,11 +47,11 @@ export default function Work() {
             <p className="text-sm">Mirpur DOHS, Bangladesh</p>
           </div>
         </div>
-        <div className="flex flex-col px-8">
-          <h3 className="text-xl font-bold">Education</h3>
+        <div className="mt-4 flex flex-col lg:pl-8">
+          <h4 className="text-xl font-bold lg:mb-2">Education</h4>
           B.Sc in Computer Science & Engineering
-          <p className="-mt-0.5 font-bold">National University of Bangladesh</p>
-          <span className="italic">Session: 2017-2018</span>
+          <p className="font-bold">National University of Bangladesh</p>
+          <p className="italic">Session: 2017-2018</p>
         </div>
       </div>
     </div>
