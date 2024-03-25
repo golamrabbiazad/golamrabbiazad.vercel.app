@@ -10,7 +10,7 @@ export default function Footer() {
       <p className="mx-auto flex w-full justify-center text-gray-700 transition hover:text-gray-500 dark:text-gray-400">
         <ExternalLink
           href="https://github.com/golamrabbiazad/golamrabbiazad.vercel.app/"
-          className="border-b-2 border-b-blue-500"
+          className="underline decoration-blue-500 decoration-wavy underline-offset-4"
         >
           view source
         </ExternalLink>
