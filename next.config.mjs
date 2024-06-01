@@ -1,3 +1,4 @@
+import MillionLint from "@million/lint"
 import million from "million/compiler"
 import { withContentlayer } from "next-contentlayer"
 
@@ -7,6 +8,10 @@ const millionConfig = {
 }
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  reactStrictMode: true,
+}
 
-export default million.next(withContentlayer(nextConfig), millionConfig)
+export default million.next(
+  MillionLint.next(withContentlayer(nextConfig), millionConfig)
+)

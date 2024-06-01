@@ -43,6 +43,10 @@ export const metadata: Metadata = {
     shortcut: "/favicon.ico",
     icon: "/favicon.ico",
   },
+  robots: {
+    follow: true,
+    index: true,
+  },
 }
 
 interface RootLayoutProps {
