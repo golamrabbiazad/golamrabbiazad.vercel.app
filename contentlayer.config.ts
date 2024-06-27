@@ -14,25 +14,41 @@ const computedFields: ComputedFields = {
   },
   slug: {
     type: "string",
-    resolve: (post) => post._raw.sourceFileName.replace(/\.mdx$/, ""),
+    resolve: (doc) => `/${doc._raw.flattenedPath}`,
+  },
+  slugAsParams: {
+    type: "string",
+    resolve: (doc) => doc._raw.flattenedPath.split("/").slice(1).join("/"),
   },
 }
 
 export const Post = defineDocumentType(() => ({
   name: "Post",
-  filePathPattern: "**/*.mdx",
+  filePathPattern: `posts/**/*.mdx`,
   contentType: "mdx",
   fields: {
-    title: { type: "string", required: true },
-    publishedAt: { type: "string", required: true },
-    summary: { type: "string", required: true },
-    image: { type: "string", required: true },
+    title: {
+      type: "string",
+      required: true,
+    },
+    publishedAt: {
+      type: "string",
+      required: true,
+    },
+    summary: {
+      type: "string",
+      required: true,
+    },
+    image: {
+      type: "string",
+      required: true,
+    },
   },
   computedFields,
 }))
 
 export default makeSource({
-  contentDirPath: "posts",
+  contentDirPath: "./content",
   documentTypes: [Post],
   mdx: {
     remarkPlugins: [remarkGfm],

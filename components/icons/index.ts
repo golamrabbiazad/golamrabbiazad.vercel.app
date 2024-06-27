@@ -1,7 +1,4 @@
-import { CrossIcon } from "./CrossIcon";
-import { MenuIcon } from "./MenuIcon";
+import { CrossIcon } from "./CrossIcon"
+import { MenuIcon } from "./MenuIcon"
 
-export {
-    CrossIcon,
-    MenuIcon
-}
+export { CrossIcon, MenuIcon }
