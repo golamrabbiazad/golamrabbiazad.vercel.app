@@ -4,7 +4,7 @@ import { NavItem } from "@/components/nav-item"
 
 export function Navbar() {
   return (
-    <div className="mx-auto max-w-2xl px-4 py-10">
+    <div className="mx-auto max-w-2xl py-10">
       <header>
         <div className="flex items-center justify-between">
           <ModeToggle />

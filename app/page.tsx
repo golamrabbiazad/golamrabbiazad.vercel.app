@@ -22,12 +22,11 @@ export default function Home() {
           Hi! I&apos;m Rabbi.
         </h1>
         <p className="text-wrap text-xl text-gray-700 dark:text-gray-200">
-          I&apos;m a Software Engineer with experience in web development & 🐞
-          an OSS Contributor.
+          Software Engineer with 3+ years of experience & 🐞 an OSS Contributor.
         </p>
 
         <p className="text-xl text-gray-600 dark:text-gray-400">
-          I talk about TypeScript, Next.js, React.js, and Cloudflare ecosystems.
+          I talk about TypeScript, Next.js, React.js, and JavaScript ecosystems.
         </p>
       </div>
 
