@@ -4,7 +4,10 @@ import { withContentlayer } from "next-contentlayer"
 const nextConfig = {
   reactStrictMode: true,
   experimental: {
+    ppr: true,
+    typedRoutes: true,
     reactCompiler: true,
+    scrollRestoration: true,
   },
 }
 
