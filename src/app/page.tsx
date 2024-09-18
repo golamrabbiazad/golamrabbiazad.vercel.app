@@ -25,7 +25,7 @@ export default function Home() {
           Software Engineer with 3+ years of experience & 🐞 an OSS Contributor.
         </p>
 
-        <p className="text-xl text-gray-600 dark:text-gray-400">
+        <p className="text-lg text-gray-600 dark:text-gray-400">
           I talk about TypeScript, Next.js, React.js, and JavaScript ecosystems.
         </p>
       </div>

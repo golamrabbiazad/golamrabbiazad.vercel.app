@@ -1,6 +1,6 @@
 import { PropsWithChildren } from "react"
 
-export const ExternalLink = ({
+const ExternalLink = ({
   href,
   className,
   children,
@@ -14,3 +14,5 @@ export const ExternalLink = ({
     {children}
   </a>
 )
+
+export default ExternalLink

@@ -1,14 +1,15 @@
 import "./globals.css"
 
 import { ReactNode } from "react"
-import type { Metadata, Viewport } from "next"
+import type { Viewport } from "next"
 import { Poppins } from "next/font/google"
+import ThemeProvider from "@/providers/theme-provider"
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
+import { metadataConfig } from "@/config/metadata"
 import Footer from "@/components/footer"
 import { Navbar } from "@/components/navbar"
-import { ThemeProvider } from "@/components/theme-provider"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -28,26 +29,7 @@ export const viewport: Viewport = {
   ],
 }
 
-export const metadata: Metadata = {
-  title: "Golamrabbi Azad - SWE, Freelancer, Youtuber",
-  description:
-    "I talk about TypeScript, Next.js, React.js, and Cloudflare ecosystems.",
-  category: "portfolio",
-  authors: {
-    name: "Golamrabbi Azad",
-    url: "https://twitter.com/golamrabbiazad",
-  },
-  publisher: "Vercel",
-  creator: "@golamrabbiazad",
-  icons: {
-    shortcut: "/favicon.ico",
-    icon: "/favicon.ico",
-  },
-  robots: {
-    follow: true,
-    index: true,
-  },
-}
+export const metadata = metadataConfig
 
 interface RootLayoutProps {
   children: Readonly<ReactNode>

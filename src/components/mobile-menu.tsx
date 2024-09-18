@@ -2,10 +2,11 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { ExternalLink } from "@/utils"
+import ExternalLink from "@/utils/external-link"
 import cn from "classnames"
-import { useDelayedRender } from "lib/use-delayed-render"
-import styles from "styles/mobile-menu.module.css"
+
+import { useDelayedRender } from "@/lib/use-delayed-render"
+import styles from "@/styles/mobile-menu.module.css"
 
 import { CrossIcon, MenuIcon } from "./icons"
 

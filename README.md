@@ -1,5 +1,7 @@
 # golamrabbiazad.vercel.app
 
+![Build workflow](https://github.com/golamrabbiazad/golamrabbiazad.vercel.app/actions/workflows/build.yml/badge.svg)
+
 ✨ My portfolio is built with Next.js 13, TailwindCSS, Vercel and Cloudflare.
 
 ```bash

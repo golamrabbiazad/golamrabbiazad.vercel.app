@@ -1,4 +1,4 @@
-import { ExternalLink } from "@/utils"
+import ExternalLink from "@/utils/external-link"
 
 export const runtime = "edge"
 

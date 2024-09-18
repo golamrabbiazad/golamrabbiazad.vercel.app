@@ -1,5 +1,3 @@
-import { withContentlayer } from "next-contentlayer"
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -8,7 +6,8 @@ const nextConfig = {
     typedRoutes: true,
     reactCompiler: true,
     scrollRestoration: true,
+    mdxRs: true,
   },
 }
 
-export default withContentlayer(nextConfig)
+export default nextConfig
