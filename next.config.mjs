@@ -1,13 +1,15 @@
+import { withContentlayer } from "next-contentlayer"
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  images: {
+    formats: ["image/avif", "image/webp"],
+  },
   experimental: {
-    ppr: true,
     typedRoutes: true,
-    reactCompiler: true,
     scrollRestoration: true,
-    mdxRs: true,
   },
 }
 
-export default nextConfig
+export default withContentlayer(nextConfig)

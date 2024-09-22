@@ -1,7 +1,6 @@
 import "./globals.css"
 
 import { ReactNode } from "react"
-import type { Viewport } from "next"
 import { Poppins } from "next/font/google"
 import ThemeProvider from "@/providers/theme-provider"
 import { Analytics } from "@vercel/analytics/react"
@@ -16,7 +15,7 @@ const poppins = Poppins({
   weight: ["400", "600", "800"],
 })
 
-export const viewport: Viewport = {
+export const viewport = {
   themeColor: [
     {
       media: "(prefers-color-scheme: dark)",
@@ -50,8 +49,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <Navbar />
           <main className="min-h-screen">{children}</main>
           <Footer />
-          <Analytics />
         </ThemeProvider>
+        <Analytics />
         <SpeedInsights />
       </body>
     </html>

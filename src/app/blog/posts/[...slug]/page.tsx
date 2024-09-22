@@ -4,7 +4,7 @@ import { notFound } from "next/navigation"
 import { allPosts } from "contentlayer/generated"
 import { format, parseISO } from "date-fns"
 
-import { Mdx } from "@/components/mdx-component"
+import { Mdx } from "@/components/mdx-compnent"
 
 interface PostProps {
   params: {
@@ -14,7 +14,7 @@ interface PostProps {
 
 async function getPostFromParams(params: PostProps["params"]) {
   const slug = params?.slug?.join("/")
-  const post = allPosts.find((post) => post.slugAsParams === slug)
+  const post = allPosts.find((post) => post.slug === slug)
 
   if (!post) return null
 
@@ -36,7 +36,7 @@ export async function generateMetadata({
 
 export async function generateStaticParams(): Promise<PostProps["params"][]> {
   return allPosts.map((post) => ({
-    slug: post.slugAsParams.split("/"),
+    slug: post.slug.split("/"),
   }))
 }
 

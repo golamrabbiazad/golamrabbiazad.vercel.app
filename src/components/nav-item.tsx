@@ -10,6 +10,7 @@ export function NavItem({ href, text }: { href: string; text: string }) {
 
   return (
     <Link
+      // @ts-expect-error
       href={href}
       scroll={false}
       className={cn(
