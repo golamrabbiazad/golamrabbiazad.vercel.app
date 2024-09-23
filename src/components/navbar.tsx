@@ -1,3 +1,5 @@
+import ExternalLink from "@/utils/external-link"
+
 import { MobileMenu } from "@/components/mobile-menu"
 import { ModeToggle } from "@/components/mode-toggle"
 import { NavItem } from "@/components/nav-item"
@@ -13,10 +15,12 @@ export function Navbar() {
               <MobileMenu />
               <NavItem href="/" text="Home" />
               <NavItem href="/blog" text="Blog" />
-              <NavItem
+              <ExternalLink
                 href="https://github.com/golamrabbiazad?tab=repositories"
-                text="Projects"
-              />
+                className="rounded-lg p-1 text-gray-600 transition-all hover:bg-slate-200 dark:text-gray-400 dark:hover:bg-slate-800 sm:px-3 sm:py-2 md:inline-block"
+              >
+                Projects
+              </ExternalLink>
               <NavItem href="/work" text="Work" />
             </div>
           </nav>
