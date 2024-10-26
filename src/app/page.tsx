@@ -48,7 +48,7 @@ export default function Home() {
           <ProjectCard
             title="dti"
             description="Development Technology & Ideas LTD."
-            slug="https://development-technology.pages.dev/"
+            slug="https://www.dti-bd.com/"
             gredient="from-[#6EE7B7] via-[#3B82F6] to-[#9333EA]"
           />
           <ProjectCard
