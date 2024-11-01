@@ -1,9 +1,10 @@
 import { Metadata } from "next"
 
 export const metadataConfig: Metadata = {
-  title: "Golamrabbi Azad - SWE, Freelancer, Youtuber",
+  title:
+    "Golamrabbi Azad - DevOps Engineer, Cloud Native Engineer, A businessman",
   description:
-    "I talk about TypeScript, Next.js, React.js, and Cloudflare ecosystems.",
+    "I talk about TypeScript, Next.js, React.js, and an AWS Cloud Practitioner",
   category: "portfolio",
   authors: {
     name: "Golamrabbi Azad",

@@ -28,7 +28,7 @@ export default function Home() {
         </p>
 
         <p className="text-md text-gray-600 dark:text-gray-400">
-          I talk about TypeScript, Next.js, Java, Go, Rust and a AWS Cloud
+          I talk about TypeScript, Next.js, Java, Go, Rust and an AWS Cloud
           Practitioner.
         </p>
       </div>
