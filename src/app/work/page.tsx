@@ -11,16 +11,16 @@ export default function Work() {
       <div className="grid max-w-6xl grid-cols-1 gap-5 py-16 lg:grid-cols-2">
         <div className="flex flex-col">
           <h2 className="text-xl font-bold lg:mb-2">Current Job</h2>
-          <p>null</p>
-          {/* <p className="text-xl">
+          {/* <p>null</p> */}
+          <p className="text-xl">
             <ExternalLink href="https://www.m4yours.com/" className="font-bold">
               M4yours
             </ExternalLink>
-            ,<span className="font-medium tracking-tighter"> SWE</span>
+            ,<span className="font-medium tracking-tighter"> Senior SWE</span>
           </p>
-          <p className="text-sm">From Jan, 2024 - June, 2024 (6 months)</p>
+          <p className="text-sm">From Oct, 2024 - Nov, 2024 <br />(2 month - Contract)</p>
 
-          <p className="text-sm">Elephant Road, Bangladesh</p> */}
+          <p className="text-sm">Elephant Road, Bangladesh</p>
         </div>
 
         <div className="flex flex-col gap-4">
@@ -75,7 +75,7 @@ export default function Work() {
             <p className="text-sm">Mirpur DOHS, Bangladesh</p>
           </div>
         </div>
-        {/* <div className="flex flex-col lg:pl-8">
+        {/* <div className="flex flex-col py-12">
           <h4 className="text-xl font-bold lg:mb-2">Education</h4>
           B.Sc in Computer Science & Engineering
           <p className="font-bold">National University of Bangladesh</p>

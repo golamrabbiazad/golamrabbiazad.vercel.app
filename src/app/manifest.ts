@@ -4,7 +4,8 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Golamrabbi Azad",
     short_name: "golamrabbiazad",
-    description: "A developer, youtuber, gamer and a bad reader",
+    description:
+      "A AWS Cloud Practitioner, Cloud Native Engineer, and a businessman",
     start_url: "/",
     display: "standalone",
     background_color: "#fff",

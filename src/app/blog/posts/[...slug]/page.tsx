@@ -7,13 +7,13 @@ import { format, parseISO } from "date-fns"
 import { Mdx } from "@/components/mdx-compnent"
 
 interface PostProps {
-  params: {
+  params: Promise<{
     slug: string[]
-  }
+  }>
 }
 
 async function getPostFromParams(params: PostProps["params"]) {
-  const slug = params?.slug?.join("/")
+  const slug = (await params)?.slug?.join("/")
   const post = allPosts.find((post) => post.slug === slug)
 
   if (!post) return null
@@ -34,7 +34,7 @@ export async function generateMetadata({
   }
 }
 
-export async function generateStaticParams(): Promise<PostProps["params"][]> {
+export async function generateStaticParams() {
   return allPosts.map((post) => ({
     slug: post.slug.split("/"),
   }))

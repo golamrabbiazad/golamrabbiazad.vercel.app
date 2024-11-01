@@ -19,7 +19,7 @@ export default function Blog() {
         <p className="mb-4 text-gray-600 dark:text-gray-400">No posts found.</p>
       )}
 
-      <div className="py-32">
+      <div className="py-16">
         {filteredBlogPosts.map((post) => (
           <BlogPost {...post} key={post.slug} />
         ))}

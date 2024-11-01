@@ -33,7 +33,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="mx-auto max-w-3xl pt-32">
+      <div className="mx-auto max-w-3xl pt-20">
         <h3 className="mb-6 text-2xl font-bold tracking-tight text-black dark:text-white md:text-2xl">
           Latest Projects
         </h3>
@@ -67,20 +67,20 @@ export default function Home() {
             title="24onbd"
             description="Aggregated from Bangladeshi all national news portal"
             slug="https://www.24onbd.com/"
-            gredient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
+            gredient="from-[#6EE7B1] via-[#3A82F2] to-[#9333EB]"
           />
           <ProjectCard
             title="Page Builder"
             description="For building page and layouts management by dragging and drop."
             slug="https://github.com/golamrabbiazad/page-builder-experimental"
-            gredient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
+            gredient="from-[#D8B4FE] to-[#818CF8]"
           />
         </div>
       </div>
 
-      <div className="mx-auto max-w-3xl py-32">
+      <div className="mx-auto max-w-3xl py-12">
         <h3 className="mb-6 text-2xl font-bold tracking-tight text-black dark:text-white md:text-2xl">
-          Open Source Projects
+          Contributed Projects
         </h3>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -94,7 +94,7 @@ export default function Home() {
             title="qwik"
             description="Instant-loading web apps, without effort"
             slug="https://github.com/QwikDev/qwik/commits/main/?author=golamrabbiazad"
-            gredient="from-[#D8B4FE] to-[#818CF8]"
+            gredient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
           />
         </div>
       </div>
