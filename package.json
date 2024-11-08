@@ -21,7 +21,7 @@
     "next": "^15.0.2",
     "next-contentlayer": "^0.3.4",
     "next-themes": "^0.3.0",
-    "react": "19.0.0-rc-603e6108-20241029",
+    "react": "19.0.0-rc.0",
     "react-dom": "19.0.0-rc-603e6108-20241029",
     "reading-time": "^1.5.0",
     "rehype-slug": "^6.0.0",
