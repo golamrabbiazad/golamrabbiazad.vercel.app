@@ -42,7 +42,7 @@ export default function Home() {
           <ProjectCard
             title="Olympia Paints"
             description="Paints & Construction Chemical Company"
-            slug="https://olympia-paints.pages.dev/"
+            slug="https://olympiapaint.com/"
             gredient="from-[#D8B4FE] to-[#818CF8]"
           />
           <ProjectCard

@@ -9,6 +9,7 @@ const nextConfig = {
   experimental: {
     typedRoutes: true,
     scrollRestoration: true,
+    reactCompiler: true,
   },
 }
 
