@@ -4,10 +4,13 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
-      allow: "/",
-      disallow: "/_next/",
+      allow: ["*", "/"],
+      disallow: ["/_next/", "/404", "/500"],
     },
-    sitemap: "https://golamrabbiazad.vercel.app/sitemap.xml",
     host: "https://vercel.com",
+    sitemap: [
+      "https://golamrabbiazad.vercel.app/sitemap.xml",
+      "https://golamrabbiazad.vercel.app/blog/sitemap.xml",
+    ],
   }
 }
