@@ -1,4 +1,6 @@
-export function CrossIcon(props: JSX.IntrinsicElements["svg"]) {
+import { SVGProps } from "react";
+
+export function CrossIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg
       className="absolute size-5 text-gray-900 dark:text-gray-100"
