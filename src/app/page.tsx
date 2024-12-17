@@ -78,7 +78,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-3xl py-12">
+{/*       <div className="mx-auto max-w-3xl py-12">
         <h3 className="mb-6 text-2xl font-bold tracking-tight text-black dark:text-white md:text-2xl">
           Contributed Projects
         </h3>
@@ -97,7 +97,7 @@ export default function Home() {
             gredient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
           />
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
