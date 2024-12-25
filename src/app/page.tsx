@@ -1,10 +1,17 @@
 import Image from "next/image"
 
 import ProjectCard from "@/components/project-card"
+import { allPosts } from "contentlayer/generated"
+
+import BlogPost from "@/components/blog-post"
 
 export const runtime = "edge"
 
 export default function Home() {
+  const filteredBlogPosts = allPosts.sort(
+    (a, b) => Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
+  )
+
   return (
     <div className="py-32">
       <div className="mx-auto w-[80px] sm:mb-0 sm:w-[176px]">
@@ -24,11 +31,7 @@ export default function Home() {
           Hi! I&apos;m Rabbi.
         </h1>
         <p className="text-wrap text-xl italic text-gray-700 dark:text-gray-200">
-          Software Engineer with 3+ years of experience & 🐞 an OSS Contributor.
-        </p>
-
-        <p className="text-md text-gray-600 dark:text-gray-400">
-          I talk about TypeScript, Next.js, Java, Go, Rust and an AWS Cloud
+          Software Engineer with 3+ years of experience, 🐞 OSS Contributor <br /> and an AWS Cloud
           Practitioner.
         </p>
       </div>
@@ -78,26 +81,17 @@ export default function Home() {
         </div>
       </div>
 
-{/*       <div className="mx-auto max-w-3xl py-12">
+      <div className="mx-auto max-w-3xl py-12">
         <h3 className="mb-6 text-2xl font-bold tracking-tight text-black dark:text-white md:text-2xl">
-          Contributed Projects
+          Posts
         </h3>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          <ProjectCard
-            title="planify"
-            description="Task manager with Todoist & Nextcloud support designed for GNU/Linux 🚀"
-            slug="https://github.com/alainm23/planify/commits/master/?author=golamrabbiazad"
-            gredient="from-[#D8B4FE] to-[#818CF8]"
-          />
-          <ProjectCard
-            title="qwik"
-            description="Instant-loading web apps, without effort"
-            slug="https://github.com/QwikDev/qwik/commits/main/?author=golamrabbiazad"
-            gredient="from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]"
-          />
+        <div>
+          {filteredBlogPosts.slice(0, 3).map((post) => (
+            <BlogPost {...post} key={post.slug} />
+          ))}
         </div>
-      </div> */}
+      </div>
     </div>
   )
 }

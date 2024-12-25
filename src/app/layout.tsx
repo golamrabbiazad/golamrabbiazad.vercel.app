@@ -9,6 +9,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import { metadataConfig } from "@/config/metadata"
 import Footer from "@/components/footer"
 import { Navbar } from "@/components/navbar"
+import SmoothScrollProvider from "@/providers/smooth-scroll-provider"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -36,23 +37,25 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${poppins.className} bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-50`}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem={false}
-          disableTransitionOnChange
+    <SmoothScrollProvider>
+      <html lang="en" suppressHydrationWarning>
+        <body
+          className={`${poppins.className} bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-50`}
         >
-          <Navbar />
-          <main className="min-h-screen">{children}</main>
-          <Footer />
-        </ThemeProvider>
-        <Analytics />
-        <SpeedInsights />
-      </body>
-    </html>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem={false}
+            disableTransitionOnChange
+          >
+            <Navbar />
+            <main className="min-h-screen">{children}</main>
+            <Footer />
+          </ThemeProvider>
+          <Analytics />
+          <SpeedInsights />
+        </body>
+      </html>
+    </SmoothScrollProvider>
   )
 }
