@@ -53,7 +53,7 @@ export function MobileMenu() {
           )}
         >
           <li
-            className="drak:border-gray-700 textr-gray-900 border-b border-gray-300 text-sm font-semibold dark:text-gray-100"
+            className="dark:border-gray-700 textr-gray-900 border-b border-gray-300 text-sm font-semibold dark:text-gray-100"
             style={{ transitionDelay: "200ms" }}
           >
             <Link href="/" className="flex w-auto pb-4">
@@ -61,7 +61,7 @@ export function MobileMenu() {
             </Link>
           </li>
           <li
-            className="drak:border-gray-700 textr-gray-900 border-b border-gray-300 text-sm font-semibold dark:text-gray-100"
+            className="dark:border-gray-700 textr-gray-900 border-b border-gray-300 text-sm font-semibold dark:text-gray-100"
             style={{ transitionDelay: "200ms" }}
           >
             <Link href="/blog" className="flex w-auto pb-4">
@@ -69,7 +69,7 @@ export function MobileMenu() {
             </Link>
           </li>
           <li
-            className="drak:border-gray-700 textr-gray-900 border-b border-gray-300 text-sm font-semibold dark:text-gray-100"
+            className="dark:border-gray-700 textr-gray-900 border-b border-gray-300 text-sm font-semibold dark:text-gray-100"
             style={{ transitionDelay: "200ms" }}
           >
             <ExternalLink
@@ -80,7 +80,7 @@ export function MobileMenu() {
             </ExternalLink>
           </li>
           <li
-            className="drak:border-gray-700 textr-gray-900 border-b border-gray-300 text-sm font-semibold dark:text-gray-100"
+            className="dark:border-gray-700 textr-gray-900 border-b border-gray-300 text-sm font-semibold dark:text-gray-100"
             style={{ transitionDelay: "200ms" }}
           >
             <Link href="/work" className="flex w-auto pb-4">
