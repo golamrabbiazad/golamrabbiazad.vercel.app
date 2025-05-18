@@ -8,7 +8,7 @@ export function ModeToggle() {
   const [isMounted, setIsMounted] = useState(false)
 
   if (theme === "system") {
-    setTheme("dark")
+    setTheme("light")
   }
 
   useEffect(() => {

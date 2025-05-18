@@ -1,11 +1,11 @@
+import { metadataConfig } from "@/config/metadata"
 import { MetadataRoute } from "next"
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Golamrabbi Azad",
     short_name: "golamrabbiazad",
-    description:
-      "Software Engineer with 3+ years of experience, OSS Contributor, and an AWS Cloud Practitioner.",
+    description: metadataConfig.description as string,
     start_url: "/",
     display: "standalone",
     background_color: "#fff",

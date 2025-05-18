@@ -2,9 +2,9 @@ import { Metadata } from "next"
 
 export const metadataConfig: Metadata = {
   title:
-    "Golamrabbi Azad - DevOps Engineer, Cloud Native Engineer, A businessman",
+    "Golamrabbi Azad - Cloud Architect, Full-Stack Engineer, An entrepreneur",
   description:
-    "I talk about TypeScript, Next.js, React.js, and an AWS Cloud Practitioner",
+    "Experienced Full-Stack Engineer (TypeScript, React, Node.js, Python) with deep DevOps, kOps expertise, CI/CD, Linux_x64, 🐞 OSS Contributor and AWS cloud infrastructure.",
   category: "portfolio",
   authors: {
     name: "Golamrabbi Azad",
@@ -20,4 +20,14 @@ export const metadataConfig: Metadata = {
     follow: true,
     index: true,
   },
+  openGraph: {
+    type: "website",
+    url: "https://golamrabbiazad.vercel.app",
+    title: "Golamrabbi Azad",
+    description: "Experienced Full-Stack Engineer (TypeScript, React, Node.js, Python) with deep DevOps, kOps expertise, CI/CD, Linux_x64, 🐞 OSS Contributor and AWS cloud infrastructure.",
+    siteName: "https://golamrabbiazad.vercel.app",
+    images: [{
+      url: "https://golamrabbiazad.vercel.app/assets/images/profile-photo.png",
+    }],
+  }
 }
