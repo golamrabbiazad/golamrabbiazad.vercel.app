@@ -1,9 +1,5 @@
 import Image from "next/image"
-
-import ProjectCard from "@/components/project-card"
 import { allPosts } from "content-collections";
-
-
 import BlogPost from "@/components/blog-post"
 import { metadataConfig } from "@/config/metadata";
 
