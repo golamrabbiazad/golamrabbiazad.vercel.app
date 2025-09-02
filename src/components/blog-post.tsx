@@ -1,13 +1,14 @@
 import Link from "next/link"
-import { Post } from "contentlayer/generated"
+import type { Post } from "content-collections"
 
 export default function BlogPost({
   title,
   summary,
-  slug,
-}: Pick<Post, "title" | "summary" | "slug">) {
+  _meta,
+}: Pick<Post, "title" | "summary" | "_meta">) {
+
   return (
-    <Link href={`/blog/posts/${slug}`} className="w-full">
+    <Link href={`/posts/${_meta.path}`} className="w-full">
       <div className="mb-6 w-full">
         <div className="flex flex-col justify-between md:flex-row">
           <h4 className="w-full pb-2 text-lg font-bold text-gray-800 underline dark:text-gray-200 md:text-xl">

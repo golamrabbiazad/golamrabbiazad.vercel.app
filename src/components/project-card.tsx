@@ -15,7 +15,7 @@ export default function ProjectCard({
     <a
       className={cn(
         "transition-all hover:scale-[1.01]",
-        "h-[150px] w-full rounded-xl bg-gradient-to-r p-1",
+        "h-[150px] w-full rounded-xl bg-linear-to-r p-1",
         gredient
       )}
       href={slug}

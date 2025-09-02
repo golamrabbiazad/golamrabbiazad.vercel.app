@@ -1,30 +1,21 @@
 import { Metadata } from "next"
 import Image from "next/image"
 import { notFound } from "next/navigation"
-import { allPosts } from "contentlayer/generated"
 import { format, parseISO } from "date-fns"
+import { allPosts } from "content-collections"
+import { MDXContent } from "@content-collections/mdx/react";
 
-import { Mdx } from "@/components/mdx-compnent"
+export const dynamicParams = false
 
 interface PostProps {
-  params: Promise<{
-    slug: string[]
-  }>
-}
-
-async function getPostFromParams(params: PostProps["params"]) {
-  const slug = (await params)?.slug?.join("/")
-  const post = allPosts.find((post) => post.slug === slug)
-
-  if (!post) return null
-
-  return post
+  params: Promise<{ slug: string }>
 }
 
 export async function generateMetadata({
   params,
 }: PostProps): Promise<Metadata> {
-  const post = await getPostFromParams(params)
+  const slug = (await params).slug
+  const post = allPosts.find((post) => post._meta.path === slug)
 
   if (!post) return {}
 
@@ -35,22 +26,21 @@ export async function generateMetadata({
 }
 
 export async function generateStaticParams() {
-  return allPosts.map((post) => ({
-    slug: post.slug.split("/"),
-  }))
+  return allPosts.map(post => ({ slug: post._meta.path }))
 }
 
 export default async function PostPage({ params }: PostProps) {
-  const post = await getPostFromParams(params)
+  const slug = (await params).slug
+  const post = allPosts.find((post) => post._meta.path === slug)
 
   if (!post) return notFound()
 
   return (
     <article className="mx-auto mt-8 flex w-full max-w-2xl flex-col items-start justify-center">
-      <h2 className="text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
+      <h2 className="text-3xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
         {post.title}
       </h2>
-      <div className="flex w-full flex-col items-start justify-between space-y-8 md:flex-row md:items-center">
+      <div className="flex w-full flex-col text-base items-start justify-between mt-4 md:flex-row md:items-center">
         <div className="flex items-center">
           <Image
             src={`/assets/images/profile-photo.png`}
@@ -59,17 +49,17 @@ export default async function PostPage({ params }: PostProps) {
             alt="Golamrabbi Azad"
             className="rounded-full"
           />
-          <p className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+          <p className="ml-2 text-gray-700 dark:text-gray-300">
             {"Golamrabbi Azad / "}
             {format(parseISO(post.publishedAt), "MMMM dd, yyyy")}
           </p>
         </div>
-        <p className="min-w-32 text-end text-sm text-gray-600 md:mt-0 dark:text-gray-400">
-          {post.readingTime.text}
+        <p className="min-w-32 text-end text-gray-600 md:mt-0 dark:text-gray-400">
+          {post.readTime}
         </p>
       </div>
-      <div className="prose dark:prose-invert mt-8 min-h-[50dvh] w-full max-w-none">
-        <Mdx code={post.body.code} />
+      <div className="prose dark:prose-invert my-8 min-h-[50dvh] w-full max-w-none">
+        <MDXContent code={post.mdx} />
       </div>
     </article>
   )

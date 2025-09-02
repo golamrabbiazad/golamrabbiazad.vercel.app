@@ -11,9 +11,9 @@ export default function Work() {
       <div className="grid max-w-6xl grid-cols-1 gap-5 py-16 lg:grid-cols-2">
         <div className="flex flex-col">
           <h2 className="text-xl font-bold lg:mb-2">Current Job</h2>
-          <p>null</p>
+          <p>Freelancing</p>
           {/* <p className="text-lg">
-            <ExternalLink href="https://www.m4yours.com/" className="font-bold underline decoration-2 decoration-blue-500 decoration-clone underline-offset-4">
+            <ExternalLink href="https://www.m4yours.com/" className="font-bold underline decoration-2 decoration-blue-500 box-decoration-clone underline-offset-4">
               M4yours
             </ExternalLink>
             ,<span className="font-medium tracking-tighter"> Senior SWE</span>
@@ -30,7 +30,7 @@ export default function Work() {
             <p className="text-medium">
               <ExternalLink
                 href="https://www.m4yours.com/"
-                className="font-bold underline decoration-2 decoration-blue-500 decoration-clone underline-offset-4"
+                className="font-bold underline decoration-2 decoration-blue-500 box-decoration-clone underline-offset-4"
               >
                 M4yours
               </ExternalLink>
@@ -41,7 +41,7 @@ export default function Work() {
           </div>
           <div className="mb-2 flex flex-col">
             <p className="text-medium">
-              <ExternalLink href="https://linkedin.com/" className="font-bold underline decoration-2 decoration-blue-500 decoration-clone underline-offset-4">
+              <ExternalLink href="https://linkedin.com/" className="font-bold underline decoration-2 decoration-blue-500 box-decoration-clone underline-offset-4">
                 Remote
               </ExternalLink>
               , <span className="font-medium">Software Engineer</span>
@@ -53,7 +53,7 @@ export default function Work() {
             <p className="text-medium">
               <ExternalLink
                 href="https://nextsolutionlab.com/"
-                className="font-bold underline decoration-2 decoration-blue-500 decoration-clone underline-offset-4"
+                className="font-bold underline decoration-2 decoration-blue-500 box-decoration-clone underline-offset-4"
               >
                 Next Solution Lab
               </ExternalLink>
