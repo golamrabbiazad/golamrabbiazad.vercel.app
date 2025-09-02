@@ -3,6 +3,7 @@ import Image from "next/image"
 import { notFound } from "next/navigation"
 import { format, parseISO } from "date-fns"
 import { allPosts } from "content-collections"
+import { MDXContent } from "@content-collections/mdx/react";
 
 export const dynamicParams = false
 
@@ -34,8 +35,6 @@ export default async function PostPage({ params }: PostProps) {
 
   if (!post) return notFound()
 
-  const { default: Content } = await import(`@content/posts/${post._meta.path}.mdx`);
-
   return (
     <article className="mx-auto mt-8 flex w-full max-w-2xl flex-col items-start justify-center">
       <h2 className="text-3xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
@@ -60,7 +59,7 @@ export default async function PostPage({ params }: PostProps) {
         </p>
       </div>
       <div className="prose dark:prose-invert my-8 min-h-[50dvh] w-full max-w-none">
-        <Content />
+        <MDXContent code={post.mdx} />
       </div>
     </article>
   )

@@ -22,7 +22,8 @@
     "next-themes": "^0.4.6",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "tailwind-merge": "^3.3.1"
+    "tailwind-merge": "^3.3.1",
+    "zod": "^4.1.5"
   },
   "devDependencies": {
     "@content-collections/core": "^0.11.1",
@@ -30,8 +31,6 @@
     "@content-collections/next": "^0.2.7",
     "@eslint/eslintrc": "^3.3.1",
     "@ianvs/prettier-plugin-sort-imports": "^4.7.0",
-    "@mdx-js/loader": "^3.1.1",
-    "@next/mdx": "^15.5.2",
     "@tailwindcss/postcss": "^4.1.12",
     "@tailwindcss/typography": "^0.5.16",
     "@types/mdx": "^2.0.13",
@@ -49,10 +48,6 @@
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.14",
     "reading-time": "^1.5.0",
-    "rehype-slug": "^6.0.0",
-    "remark-frontmatter": "^5.0.0",
-    "remark-gfm": "^4.0.1",
-    "remark-mdx-frontmatter": "^5.2.0",
     "tailwindcss": "^4.1.12",
     "typescript": "^5.9.2"
   }

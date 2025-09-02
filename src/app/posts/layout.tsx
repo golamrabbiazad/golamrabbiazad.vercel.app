@@ -2,10 +2,10 @@ import { metadataConfig } from "@/config/metadata"
 
 export const metadata = {
     ...metadataConfig,
-    title: "Blog | Golamrabbi Azad - Senior Software Engineer, An entrepreneur",
+    title: "Blog | Golamrabbi Azad - Senior Software Engineer",
     openGraph: {
         ...metadataConfig.openGraph,
-        title: "Blog | Golamrabbi Azad - Senior Software Engineer, An entrepreneur",
+        title: "Blog | Golamrabbi Azad - Senior Software Engineer",
         url: "https://golamrabbiazad.vercel.app/posts"
     }
 }

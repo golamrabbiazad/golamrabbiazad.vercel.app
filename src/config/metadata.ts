@@ -2,7 +2,7 @@ import { Metadata } from "next"
 
 export const metadataConfig: Metadata = {
   title:
-    "Golamrabbi Azad - Senior Software Engineer, AWS CCP, An entrepreneur",
+    "Golamrabbi Azad - Senior Software Engineer",
   description:
     "8+ years of experience as a Full-Stack Engineer with extensive DevOps skills in Infrastructure as Code (IaC), Terraform, Kubernetes, Docker, CI/CD, Linux_x64, 🐞 OSS Contributor and AWS, GCP cloud infrastructure.",
   category: "portfolio",
