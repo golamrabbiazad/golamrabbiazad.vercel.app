@@ -38,10 +38,10 @@ export default async function PostPage({ params }: PostProps) {
 
   return (
     <article className="mx-auto mt-8 flex w-full max-w-2xl flex-col items-start justify-center">
-      <h2 className="text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
+      <h2 className="text-3xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
         {post.title}
       </h2>
-      <div className="flex w-full flex-col items-start justify-between space-y-8 md:flex-row md:items-center">
+      <div className="flex w-full flex-col text-base items-start justify-between mt-4 md:flex-row md:items-center">
         <div className="flex items-center">
           <Image
             src={`/assets/images/profile-photo.png`}
@@ -50,16 +50,16 @@ export default async function PostPage({ params }: PostProps) {
             alt="Golamrabbi Azad"
             className="rounded-full"
           />
-          <p className="ml-2 text-sm text-gray-700 dark:text-gray-300">
+          <p className="ml-2 text-gray-700 dark:text-gray-300">
             {"Golamrabbi Azad / "}
             {format(parseISO(post.publishedAt), "MMMM dd, yyyy")}
           </p>
         </div>
-        <p className="min-w-32 text-end text-sm text-gray-600 md:mt-0 dark:text-gray-400">
+        <p className="min-w-32 text-end text-gray-600 md:mt-0 dark:text-gray-400">
           {post.readTime}
         </p>
       </div>
-      <div className="prose dark:prose-invert mt-8 min-h-[50dvh] w-full max-w-none">
+      <div className="prose dark:prose-invert my-8 min-h-[50dvh] w-full max-w-none">
         <Content />
       </div>
     </article>

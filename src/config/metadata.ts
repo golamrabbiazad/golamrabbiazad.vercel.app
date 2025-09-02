@@ -2,9 +2,9 @@ import { Metadata } from "next"
 
 export const metadataConfig: Metadata = {
   title:
-    "Golamrabbi Azad - Cloud Architect, Full-Stack Engineer, An entrepreneur",
+    "Golamrabbi Azad - Senior Software Engineer, AWS CCP, An entrepreneur",
   description:
-    "Experienced Full-Stack Engineer (TypeScript, React, Node.js, Python) with deep DevOps, kOps expertise, CI/CD, Linux_x64, 🐞 OSS Contributor and AWS cloud infrastructure.",
+    "8+ years of experience as a Full-Stack Engineer with extensive DevOps skills in Infrastructure as Code (IaC), Terraform, Kubernetes, Docker, CI/CD, Linux_x64, 🐞 OSS Contributor and AWS, GCP cloud infrastructure.",
   category: "portfolio",
   authors: {
     name: "Golamrabbi Azad",
@@ -24,7 +24,7 @@ export const metadataConfig: Metadata = {
     type: "website",
     url: "https://golamrabbiazad.vercel.app",
     title: "Golamrabbi Azad",
-    description: "Experienced Full-Stack Engineer (TypeScript, React, Node.js, Python) with deep DevOps, kOps expertise, CI/CD, Linux_x64, 🐞 OSS Contributor and AWS cloud infrastructure.",
+    description: "8+ years of experience as a Full-Stack Engineer with extensive DevOps skills in Infrastructure as Code (IaC), Terraform, Kubernetes, Docker, CI/CD, Linux_x64, 🐞 OSS Contributor and AWS, GCP cloud infrastructure.",
     siteName: "https://golamrabbiazad.vercel.app",
     images: [{
       url: "https://golamrabbiazad.vercel.app/assets/images/profile-photo.png",

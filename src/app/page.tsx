@@ -12,22 +12,21 @@ export default function Home() {
   )
 
   return (
-    <div className="py-32">
-      <div className="w-[80px] mx-auto max-w-3xl sm:mb-0 sm:w-[176px]">
-        <Image
-          alt="Golamrabbi Azad"
-          height={500}
-          width={500}
-          src="/assets/images/profile-photo.png"
-          sizes="30vw"
-          priority
-          className="size-full rounded-full object-contain"
-        />
-      </div>
-
-      <div className="mt-8 max-w-3xl flex flex-col space-y-2 mx-auto">
+    <div className="py-16">
+      <div className="max-w-3xl flex flex-col space-y-2 mx-auto">
+        <div className="w-[80px] mb-4 sm:w-[176px]">
+          <Image
+            alt="Golamrabbi Azad"
+            height={500}
+            width={500}
+            src="/assets/images/profile-photo.png"
+            sizes="30vw"
+            priority
+            className="size-full rounded-full object-contain"
+          />
+        </div>
         <h1 className="text-3xl font-bold tracking-tight text-black drop-shadow-md dark:text-white dark:drop-shadow-md">
-          Hi! I&apos;m Rabbi.
+          Hi! I&apos;m Golam Rabbi Azad.
         </h1>
         <p className="text-wrap text-md text-gray-700 dark:text-gray-200">
           {metadataConfig.description}

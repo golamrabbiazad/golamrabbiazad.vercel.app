@@ -17,8 +17,8 @@ const nextConfig: NextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  typedRoutes: true,
   experimental: {
-    typedRoutes: true,
     scrollRestoration: true,
     reactCompiler: true,
   },
