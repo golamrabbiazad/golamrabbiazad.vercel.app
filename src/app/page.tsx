@@ -1,19 +1,18 @@
 import Image from "next/image"
 import { allPosts } from "content-collections";
 import BlogPost from "@/components/blog-post"
-import { metadataConfig } from "@/config/metadata";
+import { ABOUT_DATA } from "@/config/about";
 
 export const runtime = "edge"
 
 export default function Home() {
-
   const filteredBlogPosts = allPosts.sort(
     (a, b) => Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
   )
 
   return (
     <div className="py-16">
-      <div className="max-w-3xl flex flex-col space-y-2 mx-auto">
+      <div className="max-w-3xl flex flex-col mx-auto">
         <div className="w-[80px] mb-4 sm:w-[176px]">
           <Image
             alt="Golamrabbi Azad"
@@ -28,12 +27,18 @@ export default function Home() {
         <h1 className="text-3xl font-bold tracking-tight text-black drop-shadow-md dark:text-white dark:drop-shadow-md">
           Hi! I&apos;m Golam Rabbi Azad.
         </h1>
-        <p className="text-wrap text-md text-gray-700 dark:text-gray-200">
+        {/* <p className="text-wrap text-md text-gray-700 dark:text-gray-200">
           {metadataConfig.description}
-        </p>
+        </p> */}
+
+        <ul className="list-disc p-4 text-lg">
+          {ABOUT_DATA.map((data, idx) => (
+            <li className="py-1" key={idx}>{data}</li>
+          ))}
+        </ul>
       </div>
 
-      <div className="mx-auto max-w-3xl py-12">
+      <div className="mx-auto max-w-3xl py-8">
         <h3 className="mb-6 text-2xl font-bold tracking-tight text-black dark:text-white md:text-2xl underline decoration-blue-500 decoration-wavy underline-offset-4">
           Recent Posts
         </h3>
